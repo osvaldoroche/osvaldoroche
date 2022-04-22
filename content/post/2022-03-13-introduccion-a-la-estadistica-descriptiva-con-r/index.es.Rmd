@@ -1,7 +1,7 @@
 ---
-title: Introducción a la Estadística Descriptiva con R
+title: Introducción a la Estadística Descriptiva con R. Notas del curso I.
 author: Osvaldo Roche
-date: ''
+date: '21/04/2022'
 slug: introduccion a la estadistica descriptiva con R
 categories:
   - Estadística
@@ -33,18 +33,459 @@ La estadística cubre los métodos y técnicas detras de los procesos de recolec
 + Investigación exploratoria
 + Censos Económicos
 
+**Conceptos bàsicos**
+
++ Muestra e inferencia: Objetivo de esta fase es esplicar lo que le sucede a una población a partir de una muestra de ella.
+
++ Explosión del conocimiento, nace a partir del Ordenador.
+
+* Machine Learning
+* Minería de Datos
+* Minería de Texto
+* Estadística multivariante
+
 Tenemos una población: 
 
 ```{r, echo=FALSE}
 round(runif(100,0,200), 0)
 ```
 
-## 1. Introducción
 
-$x=\{2,3,4,5,6,71,3,5,7\}$
+# 1. Estadística descriptiva
 
-## 2. Tipos de Datos
+## 1.1. Población
 
-## 3. Visualización
+Una población es una colección de elementos existentes. Es el universo de estudio identificado como $u$. Existen dos tipos la **población finita** y la **población infinita**. La población se puede representar por:
 
-## 4. Medidas de Tendencia Central
+$$U=\{u_1, u_2, \ldots, u_i,\ldots, u_N\}$$
+
+Se usa la letra $N$ para referirse al tamaño del Universo en estudio.
+
+## 1.2. Muestra
+
+Se utiliza la letra $s$ para referirse a una muestra. Que es un subconjunto de la población. Formalmente se expresa como:
+
+$$U=\{u_{(1)}, u_{(2)}, \ldots, u_{(n)}\}$$ 
+
+
+n es tamaño muestra
+
+
+## 1.3. Variable
+
+Una variable expresa una característica asociado a algún elemento en la población. Normalmente se denota con $X$ e $Y$.
+
+Ejemplos:
+
+  * ($X$) Edad
+  * ($Y$) Tamaño
+  * ($Z$) Sexo
+  * ($W$) Horas
+  * ($V$) Número de celular
+
+
+La variable asociada a un elemento en la población se pueden denotar como:
+
+$$u_i=\{x_{(i1)}, x_{(i2)}, \ldots, u_{(ip)}\}$$
+
+
+### 1.3.1. Variables Cualitativas
+
+  * Nominal u Ordinal
+
+### 1.3.2. Variables Cuantitativas
+
+  * Discreta o Continuas
+  
+## 1.4. Ordenamiento de datos
+
+**Exactitud**: Aproximación de los resultados al valor real. Estar al rededor del valor cercano. 
+
+**Presición**: Aproximación de los valores resultantes en un experimento realizado repetidas veces. Resultado al rededor de un valor. 
+
+**Columnas**: Se denominan variables
+
+**Filas**: Se denominan observaciones
+
+Se pueden ordenar de tres formas distintas los datos:
+
+1. Mediciones simples o en su mínima expresión. Como se han extraido en unidades también denominado datos no ordenados. 
+ 
+2. Mediciones en tabla de frecuencia simple.
+
+```{r, eval=FALSE}
+# ejemplo Frecuencias simples
+table(bd$sexo)
+table(bd$edad)
+```
+ 
+3. Meciones en tabla de frecuencia agrupadas.
+
+Existen dos tipós de frecuencias:
+
+* Frecuencia Absoluta
+
+* Frecuencia Relativa
+
+$$r_i = \frac{f_i}{n}$$
+La Propiedad es: 
+
+$$\sum_{i=1}^k r_i = 1$$
+
+## 1.5. Bibliografía
+
+* https://rpubs.com/hllinas/R_Tablas_agrupadas
+
+* https://aprender-uib.github.io/AprendeR1/
+
+
+# 2. Medidas de Tendencia central
+
+## 2.1. Moda
+
+Número que aparece con más frecuencia. si hay dos o más observaciones que  se repiten un mismo número de veces se dice bi-modal, tri-modal, etc.
+
+## 2.2. Mediana
+
+Corresponde al valor que se encuentra en el centro de la serie de números ordenados. Deja la misma cantidad de información a la izquierza y a la derecha. 
+
+Si $N$ es impar:
+
+$$Me = X_{(N/2)+1}$$
+
+$$Me = X_{(N + 1)/2}$$
+
+
+Si $N$ es par:
+
+$$Me = \frac{X_{N/2}+X_{N/2+1}}{2}$$
+
+Una características de la mediana es que no la afectan los **valores atípicos**.
+
+
+## 2.3. Media, media aritmética
+
+Esta medida se caracteriza porque su construcción depende de todas las observaciones en los datos. Se identifica como $\bar{x}$:
+
+
+$$\bar{x} = \frac{\sum_{i=1}^N {x_i}}{N}$$
+La media es una medida sensible a los valores atípicos. Se puede comparar la mediana y la media si se dispersan demasiado es posible que hayan valores atípicos. 
+
+**Uso Media Geométrica**
+
+Se utiliza cuando se trabaja con ratios o razones y se representa como:
+
+$$\bar{x}_G=\sqrt[n]{x_1x_2\ldots x_n}$$
+
+Un ejemplo es calcular la razón de cambio de la población por décadas:
+
+```{r}
+t1 <- data.frame(dec=0:5, pob=c(1000, 1100, 1400, 1450, 1600, 1700))
+# Razón de cambio
+x <- t1$pob[-1] / t1$pob[-6]
+# Media geométrica
+prod(x)^(1/5)
+```
+
+**Uso Media armónica**
+
+Es recomendable cuando se trabaja con distancias y velocidades.
+
+## 2.4. Ejemplos
+
+***1. Para los siguientes datos:***
+
+```{r, message=FALSE, warning=FALSE}
+library(dplyr)
+library(kableExtra)
+set.seed(999)
+x <- round(runif(80,15,35), 0)
+x <- data.frame(x)
+t1 <- x %>% group_by(x) %>% count(name = "fi") 
+t1 %>% kable(align = "c") %>% kable_classic()
+```
+
+
+Calcule la moda, la mediana y el promedio.
+
+**a) Media o Promedio:** Cuando se tiene tablas de frecuencia como la anterior la formula a utilizar es la siguiente:
+
+$$\bar{x}=\frac{\sum_{i=1}^k x_i*f_i}{n}$$
+
+```{r}
+# Promedio
+sum(t1$x*t1$fi)/80
+```
+
+**b) Moda: ** La moda es el que más se repite, por tanto es la mayor frecuencia absoluta asociada al valor de $x$, es este caso es 8 asociado a 31 y 32 años respectivamente, siendo bi-modal como se muestra en la tabla.  
+
+```{r}
+t1 %>% arrange(desc(fi)) %>% 
+  head(n=3) %>% 
+  kable(align = "c") %>% 
+  kable_classic()
+```
+
+
+**c) Mediana:** Es el valor medio. Se inicia calculando la frecuencia absoluta acumulada cuando se tienen tablas de frecuencias. Su formula es:
+
+$$F_i=\sum_{j=1}^{j=i} f_j$$
+Luego se sigue el criterio de $n$ par o impar y se busca la posición como el valor más cercano por arriba dentro de las frecuencias absolutas acumuladas. Podemos hacer el cálculo:
+
+```{r}
+t1$FI <-cumsum(t1$fi)
+# 80 / 2 = 40 y 40 +1 = 41, el valor por arriba es 45 entonces: la mediana es 26
+```
+
+**2. Medidas de tendencia central para tabalas de frecuencia por intervalos**
+
+```{r}
+set.seed(999)
+x <- round(runif(80,15,35), 0)
+t2 <- data.frame(lils=cut(x,5))
+t2 %>% group_by(lils) %>% count(name = "fi")
+```
+
+
+# 3. Medidas de Variabilidad
+
+Son medidas que nos indican el nivel de dispersión o variabilidad en un conjunto de datos. La mayoría de las medidas nos reflejan la concentración al rededor de la media.
+
+## 3.1. Rango
+
+Calcula la distancia entre el valor más grande y el valor más pequeño del conjunto de datos. Su representación es como $R$:
+
+$$R=X_{max}-X_{min}$$
+Se puede aplicar a diferentes casos y es la medida más sencilla. Por ejemplo puede utilizarse para ver el salario menos y mayor. 
+
+## 3.2. Desviación media o desviación estandar
+
+Esta medida devuelve el promedio de las distancias de los datos a su promedio. La medición e interprestación se hace con las unidades originales del conjunto de datos.
+
+$$DM=\frac{\sum_s |x_i-\bar{x}|}{n}; \quad DM=\frac{\sum_{i=1}^{k} |x_i-\bar{x}|}{n};$$
+
+> Ejemplo: Calcular desviación media del conjunto de datos
+
+ -5 5 5 5 5 5 5: 
+ -3 3 4 5 6 7 7:
+ -1 1 2 5 8 9 9:
+ 
+```{r}
+# Caso 1
+x <- c(5,5,5,5,5,5,5)
+sum(abs(x - mean(x)))/7
+
+# Caso 2
+x <- c(3, 3, 4, 5, 6, 7, 7)
+sum(abs(x - mean(x)))/7
+
+# Caso 3
+x <- c(1, 1, 2, 5, 8, 9, 9)
+x - mean(x) # Distancias
+abs(x-mean(x)) # Valor absoluto
+sum(abs(x - mean(x)))/7 
+```
+
+
+## 3.3. Varianza
+
+La varianza es la medida más usual en la estadística. Esta medida en si misma no tiene interpretación pero se la utiliza para obtener otras medidas como la desviación estándar y el coeficiente de variación que si tienen una interpretación. La varianza nos muestra el promedio de distancias al cuadrado. 
+
+ - **Varianza poblacional (N)**
+ 
+ $$V(x)=\sigma^2=\frac{\sum_U (x_i-\bar{x})^2}{N}$$
+ 
+ $(x_i-\bar{x})$ se denomina desviación respecto a la de la media
+ 
+ - **Varianza muestral (n)**
+ 
+ $$v(x)=s^2=\frac{\sum_s (x_i-\bar{x})^2}{n-1}$$
+
+> Ejemplo: Calcular la varianza del conjunto de datos
+
+ -3 3 4 5 6 7 7:
+ -1 1 2 5 8 9 9:
+ 
+```{r}
+#caso 2
+x <- c(3, 3, 4, 5, 6, 7, 7)
+sum((x-mean(x))^2)/(7-1)
+
+#caso 3
+x <- c(1, 1, 2, 5, 8, 9, 9)
+sum((x-mean(x))^2)/(7-1)
+
+```
+
+El caso 3 tiene mayor variabilidad que los otros dos casos.
+
+ - Formula corta de la varianza muestral
+ 
+ 
+ $$V(x)=s^2=\frac{\sum_s x_i^2-n \bar{x}}{n-1}$$
+
+> Ejemplo: Calcular la varianza del conjunto de datos
+
+ -1 1 2 5 8 9 9:
+
+```{r}
+# caso 3
+x <- c(1, 1, 2, 5, 8, 9, 9)
+sum(x^2)
+(sum(x^2)-7*mean(x)^2)/(7-1)
+```
+
+## 3.4. Desviación estandar
+
+Esta medida si se puede interpretar porque ya no se encuentra elevada al cuadrado. El valor obtenido normalmente es cercano a la desviación media. 
+
+ - Desvisación estándar poblacional
+ 
+ $$\sigma=\sqrt{\sigma^2}$$
+ 
+ - Desviación estandar muestral
+
+
+ $$\sigma=\sqrt{s^2}$$
+> Ejemplo: Calcular desviación estándar del conjunto de datos
+
+ -1 1 2 5 8 9 9:
+
+```{r}
+x <- c(1, 1, 2, 5, 8, 9, 9)
+sqrt(var(x))
+```
+
+## 3.5. Coeficiente de variación
+
+Es la única medida de variabilidad relativa (carece de unidad de medida). Se puede interpretar como el porcentaje en los datos que no se sienten representados por la media. Si se acerca al cero los datos se sientes representados por la media.
+
+$$cv=\frac{s}{\bar{x}}$$
+
+> Ejemplo: Calcular desviación media del conjunto de datos
+
+ -1 1 2 5 8 9 9:
+
+```{r}
+x <- c(1, 1, 2, 5, 8, 9, 9)
+round(sqrt(var(x)) / mean(x), 2)
+```
+En este ejemplo los datos estan dispersos y no se sientes representados por la media. 
+
+## 3.6. Rango intercuartilico
+
+Se tiene los sigueintes 100 datos de una población de personas respecto a su peso.
+
+```{r}
+set.seed(111)
+x <- round(rnorm(100,50,5),1)
+set.seed(111)
+y <- round(rnorm(100,50,1),1)
+z <- round(rnorm(100,50,15),1)
+hist(x)
+abline(v=median(x), col="red",lwd=2)
+par(mfrow=c(1,3))
+boxplot(x,ylim=c(30,65))
+boxplot(y,ylim=c(30,65))
+boxplot(z,ylim=c(30,65))
+```
+
+El diagrama de caja nos muestra el rango intercurtil. La caja contiene el 50% de la población.Fuera de las lineas se muestran los datos atípicos.
+
+## 3.7. Índice de diversidad
+
+Este se utiliza para variables cualitativas a diferencia de todas las medidas de variabilidad vistas anteriormente. Nos ayuda a medir la **homogeneidad** y **heterogeneidad** de las catagorías observadas en nuestra variable cualitativa.  
+
+Para la diversidad se utilizan 3 formulas para su cálculo, las primeras dos no tienen una interpretación importante:
+
+$$H'=\frac{n log (n)-\sum_{i=1}^k f_i log(f_i)}{n}$$
+
+$$H'_{max}=log(k)$$
+
+$J'$ es una medida de homogeneida y esta acotada entre el 0 y 1. Y sirve para poblaciones grandes. 
+
+$$J'=\frac{H'}{H'_{max}}$$
+
+ - $J' \rightarrow 1$ Alta homogeneidad, categorías iguales
+ - $J' \rightarrow 0$ Alta Heterogeneidad, categprías diferentes.
+ 
+> Ejemplo
+
+Tenemos los datos de una muestra de 20 gorriones y sus sitios de nido.
+
+```{r}
+nidos <- c("vides", "alero", "ramas", "cueva")
+f <- c(5,5,5,5)
+t1 <- data.frame(nidos, f)
+t1
+```
+
+Para calcular $H'$:
+
+$$H'=\frac{20 log (20) -(5log(5) + 5log(5) + 5log(5) + 5log(5))}{20}$$
+
+```{r}
+# Resultado
+log10(20)-log10(5)
+```
+
+
+$$H'_{max}=log(k)=log=(4) = 0.60206$$
+
+El índice de diversidad es:
+
+$$J'=\frac{H'}{H'_{max}}=\frac{0.60206}{0.60206}=1$$
+
+Los gorriones no tienen preferencia por los nidos.
+
+**Notas Adicionales:**
+
+  - Si $J'>0.9$ Alta homogeneidad
+  - Si $J'<0.6$ Heterogeneidad
+  - Si $J'<0.5$ Alta heterogeneidad
+
+
+# 4. Medidas de formas
+
+Son medidas más visuales para ver las distribuciones de los datos.
+
+## 4.1. Asimetría
+
+$$As_{fisher}=\frac{\mu_3}{s^3}$$
+
+$$\mu_3=\frac{\sum_s (x_i-\bar{x})^3}{n}$$
+  
+  - Si $A_s = 0$ es simetrico
+  - Si $A_s > 0$ es simetrico positivo
+  - Si $A_s < 0$ es simetrico negativo
+
+## 4.2. Kurtosis
+
+Da una medida sobre la forma de distribuciones.
+
+$$k=\frac{\mu_4}{s^4}$$
+
+$$\mu_4=\frac{\sum_s (x_i-\bar{x})^4}{n}$$
+
+## 4.3. Quantiles
+
+Son acumulaciones en la curva de datos o puntos de acumulación. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

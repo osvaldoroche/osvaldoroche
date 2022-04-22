@@ -1,7 +1,7 @@
 ---
-title: Introducción a la Estadística Descriptiva con R
+title: Introducción a la Estadística Descriptiva con R. Notas del curso I.
 author: Osvaldo Roche
-date: ''
+date: '21/04/2022'
 slug: introduccion a la estadistica descriptiva con R
 categories:
   - Estadística
@@ -21,6 +21,8 @@ projects: []
 ---
 
 <script src="{{< blogdown/postref >}}index.es_files/header-attrs/header-attrs.js"></script>
+<script src="{{< blogdown/postref >}}index.es_files/kePrint/kePrint.js"></script>
+<link href="{{< blogdown/postref >}}index.es_files/lightable/lightable.css" rel="stylesheet" />
 
 
 <div id="estadística-descriptiva-con-r" class="section level1">
@@ -34,24 +36,581 @@ projects: []
 <li>Investigación exploratoria</li>
 <li>Censos Económicos</li>
 </ul>
+<p><strong>Conceptos bàsicos</strong></p>
+<ul>
+<li><p>Muestra e inferencia: Objetivo de esta fase es esplicar lo que le sucede a una población a partir de una muestra de ella.</p></li>
+<li><p>Explosión del conocimiento, nace a partir del Ordenador.</p></li>
+<li><p>Machine Learning</p></li>
+<li><p>Minería de Datos</p></li>
+<li><p>Minería de Texto</p></li>
+<li><p>Estadística multivariante</p></li>
+</ul>
 <p>Tenemos una población:</p>
-<pre><code>##   [1] 134  19  38 161 198  82   4 107 125  88 132 154  74 153 115 151 174  48
-##  [19]  67  61  21   1 110   2 163  53  97  78  28  34 101 180 139  78  85  35
-##  [37]   0 181 164  17 122  70  73 102 135  78   1 180  41 132  24 162  44  43
-##  [55] 158 142   5 148 190 127  52  16  16  95 119 117  25  27 118  34 138  91
-##  [73] 115  32 109 111 105  73 161   3  23 176 157  69 163  73  80  56  83  31
-##  [91]  62 172 110  98 122 161   1 190 163  78</code></pre>
-<div id="introducción" class="section level2">
-<h2>1. Introducción</h2>
-<p><span class="math inline">\(x=\{2,3,4,5,6,71,3,5,7\}\)</span></p>
+<pre><code>##   [1]  66 135  16  90 139 191 100  68 171  77 186 177 138  90  17  99 199 138
+##  [19] 124 159 100 107  80  57 196 168 189  38 151 198  83 123  51  63  12 176
+##  [37] 148 122 137 162  65 164 106  12 154   7  22 133 110 170 189  98 182  47
+##  [55] 165  74 185 192  25  82  42  50  96  78  27   7 149  91  64 157  80  24
+##  [73]  30 102 196 151 179 170   4 140  79 128 160 183   4 194  37  10  55  66
+##  [91]  90  10 151  32  93  64 145  56  59  94</code></pre>
 </div>
-<div id="tipos-de-datos" class="section level2">
-<h2>2. Tipos de Datos</h2>
+<div id="estadística-descriptiva" class="section level1">
+<h1>1. Estadística descriptiva</h1>
+<div id="población" class="section level2">
+<h2>1.1. Población</h2>
+<p>Una población es una colección de elementos existentes. Es el universo de estudio identificado como <span class="math inline">\(u\)</span>. Existen dos tipos la <strong>población finita</strong> y la <strong>población infinita</strong>. La población se puede representar por:</p>
+<p><span class="math display">\[U=\{u_1, u_2, \ldots, u_i,\ldots, u_N\}\]</span></p>
+<p>Se usa la letra <span class="math inline">\(N\)</span> para referirse al tamaño del Universo en estudio.</p>
 </div>
-<div id="visualización" class="section level2">
-<h2>3. Visualización</h2>
+<div id="muestra" class="section level2">
+<h2>1.2. Muestra</h2>
+<p>Se utiliza la letra <span class="math inline">\(s\)</span> para referirse a una muestra. Que es un subconjunto de la población. Formalmente se expresa como:</p>
+<p><span class="math display">\[U=\{u_{(1)}, u_{(2)}, \ldots, u_{(n)}\}\]</span></p>
+<p>n es tamaño muestra</p>
 </div>
-<div id="medidas-de-tendencia-central" class="section level2">
-<h2>4. Medidas de Tendencia Central</h2>
+<div id="variable" class="section level2">
+<h2>1.3. Variable</h2>
+<p>Una variable expresa una característica asociado a algún elemento en la población. Normalmente se denota con <span class="math inline">\(X\)</span> e <span class="math inline">\(Y\)</span>.</p>
+<p>Ejemplos:</p>
+<ul>
+<li>(<span class="math inline">\(X\)</span>) Edad</li>
+<li>(<span class="math inline">\(Y\)</span>) Tamaño</li>
+<li>(<span class="math inline">\(Z\)</span>) Sexo</li>
+<li>(<span class="math inline">\(W\)</span>) Horas</li>
+<li>(<span class="math inline">\(V\)</span>) Número de celular</li>
+</ul>
+<p>La variable asociada a un elemento en la población se pueden denotar como:</p>
+<p><span class="math display">\[u_i=\{x_{(i1)}, x_{(i2)}, \ldots, u_{(ip)}\}\]</span></p>
+<div id="variables-cualitativas" class="section level3">
+<h3>1.3.1. Variables Cualitativas</h3>
+<ul>
+<li>Nominal u Ordinal</li>
+</ul>
+</div>
+<div id="variables-cuantitativas" class="section level3">
+<h3>1.3.2. Variables Cuantitativas</h3>
+<ul>
+<li>Discreta o Continuas</li>
+</ul>
+</div>
+</div>
+<div id="ordenamiento-de-datos" class="section level2">
+<h2>1.4. Ordenamiento de datos</h2>
+<p><strong>Exactitud</strong>: Aproximación de los resultados al valor real. Estar al rededor del valor cercano.</p>
+<p><strong>Presición</strong>: Aproximación de los valores resultantes en un experimento realizado repetidas veces. Resultado al rededor de un valor.</p>
+<p><strong>Columnas</strong>: Se denominan variables</p>
+<p><strong>Filas</strong>: Se denominan observaciones</p>
+<p>Se pueden ordenar de tres formas distintas los datos:</p>
+<ol style="list-style-type: decimal">
+<li><p>Mediciones simples o en su mínima expresión. Como se han extraido en unidades también denominado datos no ordenados.</p></li>
+<li><p>Mediciones en tabla de frecuencia simple.</p></li>
+</ol>
+<pre class="r"><code># ejemplo Frecuencias simples
+table(bd$sexo)
+table(bd$edad)</code></pre>
+<ol start="3" style="list-style-type: decimal">
+<li>Meciones en tabla de frecuencia agrupadas.</li>
+</ol>
+<p>Existen dos tipós de frecuencias:</p>
+<ul>
+<li><p>Frecuencia Absoluta</p></li>
+<li><p>Frecuencia Relativa</p></li>
+</ul>
+<p><span class="math display">\[r_i = \frac{f_i}{n}\]</span>
+La Propiedad es:</p>
+<p><span class="math display">\[\sum_{i=1}^k r_i = 1\]</span></p>
+</div>
+<div id="bibliografía" class="section level2">
+<h2>1.5. Bibliografía</h2>
+<ul>
+<li><p><a href="https://rpubs.com/hllinas/R_Tablas_agrupadas" class="uri">https://rpubs.com/hllinas/R_Tablas_agrupadas</a></p></li>
+<li><p><a href="https://aprender-uib.github.io/AprendeR1/" class="uri">https://aprender-uib.github.io/AprendeR1/</a></p></li>
+</ul>
+</div>
+</div>
+<div id="medidas-de-tendencia-central" class="section level1">
+<h1>2. Medidas de Tendencia central</h1>
+<div id="moda" class="section level2">
+<h2>2.1. Moda</h2>
+<p>Número que aparece con más frecuencia. si hay dos o más observaciones que se repiten un mismo número de veces se dice bi-modal, tri-modal, etc.</p>
+</div>
+<div id="mediana" class="section level2">
+<h2>2.2. Mediana</h2>
+<p>Corresponde al valor que se encuentra en el centro de la serie de números ordenados. Deja la misma cantidad de información a la izquierza y a la derecha.</p>
+<p>Si <span class="math inline">\(N\)</span> es impar:</p>
+<p><span class="math display">\[Me = X_{(N/2)+1}\]</span></p>
+<p><span class="math display">\[Me = X_{(N + 1)/2}\]</span></p>
+<p>Si <span class="math inline">\(N\)</span> es par:</p>
+<p><span class="math display">\[Me = \frac{X_{N/2}+X_{N/2+1}}{2}\]</span></p>
+<p>Una características de la mediana es que no la afectan los <strong>valores atípicos</strong>.</p>
+</div>
+<div id="media-media-aritmética" class="section level2">
+<h2>2.3. Media, media aritmética</h2>
+<p>Esta medida se caracteriza porque su construcción depende de todas las observaciones en los datos. Se identifica como <span class="math inline">\(\bar{x}\)</span>:</p>
+<p><span class="math display">\[\bar{x} = \frac{\sum_{i=1}^N {x_i}}{N}\]</span>
+La media es una medida sensible a los valores atípicos. Se puede comparar la mediana y la media si se dispersan demasiado es posible que hayan valores atípicos.</p>
+<p><strong>Uso Media Geométrica</strong></p>
+<p>Se utiliza cuando se trabaja con ratios o razones y se representa como:</p>
+<p><span class="math display">\[\bar{x}_G=\sqrt[n]{x_1x_2\ldots x_n}\]</span></p>
+<p>Un ejemplo es calcular la razón de cambio de la población por décadas:</p>
+<pre class="r"><code>t1 &lt;- data.frame(dec=0:5, pob=c(1000, 1100, 1400, 1450, 1600, 1700))
+# Razón de cambio
+x &lt;- t1$pob[-1] / t1$pob[-6]
+# Media geométrica
+prod(x)^(1/5)</code></pre>
+<pre><code>## [1] 1.111962</code></pre>
+<p><strong>Uso Media armónica</strong></p>
+<p>Es recomendable cuando se trabaja con distancias y velocidades.</p>
+</div>
+<div id="ejemplos" class="section level2">
+<h2>2.4. Ejemplos</h2>
+<p><strong><em>1. Para los siguientes datos:</em></strong></p>
+<pre class="r"><code>library(dplyr)
+library(kableExtra)
+set.seed(999)
+x &lt;- round(runif(80,15,35), 0)
+x &lt;- data.frame(x)
+t1 &lt;- x %&gt;% group_by(x) %&gt;% count(name = &quot;fi&quot;) 
+t1 %&gt;% kable(align = &quot;c&quot;) %&gt;% kable_classic()</code></pre>
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+x
+</th>
+<th style="text-align:center;">
+fi
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+15
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+16
+</td>
+<td style="text-align:center;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+17
+</td>
+<td style="text-align:center;">
+7
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+18
+</td>
+<td style="text-align:center;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+19
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+20
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+21
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+22
+</td>
+<td style="text-align:center;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+23
+</td>
+<td style="text-align:center;">
+3
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+24
+</td>
+<td style="text-align:center;">
+5
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+25
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+26
+</td>
+<td style="text-align:center;">
+6
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+27
+</td>
+<td style="text-align:center;">
+7
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+28
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+29
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+30
+</td>
+<td style="text-align:center;">
+4
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+31
+</td>
+<td style="text-align:center;">
+8
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+32
+</td>
+<td style="text-align:center;">
+8
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+33
+</td>
+<td style="text-align:center;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+34
+</td>
+<td style="text-align:center;">
+1
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+35
+</td>
+<td style="text-align:center;">
+2
+</td>
+</tr>
+</tbody>
+</table>
+<p>Calcule la moda, la mediana y el promedio.</p>
+<p><strong>a) Media o Promedio:</strong> Cuando se tiene tablas de frecuencia como la anterior la formula a utilizar es la siguiente:</p>
+<p><span class="math display">\[\bar{x}=\frac{\sum_{i=1}^k x_i*f_i}{n}\]</span></p>
+<pre class="r"><code># Promedio
+sum(t1$x*t1$fi)/80</code></pre>
+<pre><code>## [1] 24.9125</code></pre>
+<p><strong>b) Moda: </strong> La moda es el que más se repite, por tanto es la mayor frecuencia absoluta asociada al valor de <span class="math inline">\(x\)</span>, es este caso es 8 asociado a 31 y 32 años respectivamente, siendo bi-modal como se muestra en la tabla.</p>
+<pre class="r"><code>t1 %&gt;% arrange(desc(fi)) %&gt;% 
+  head(n=3) %&gt;% 
+  kable(align = &quot;c&quot;) %&gt;% 
+  kable_classic()</code></pre>
+<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
+<thead>
+<tr>
+<th style="text-align:center;">
+x
+</th>
+<th style="text-align:center;">
+fi
+</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center;">
+31
+</td>
+<td style="text-align:center;">
+8
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+32
+</td>
+<td style="text-align:center;">
+8
+</td>
+</tr>
+<tr>
+<td style="text-align:center;">
+17
+</td>
+<td style="text-align:center;">
+7
+</td>
+</tr>
+</tbody>
+</table>
+<p><strong>c) Mediana:</strong> Es el valor medio. Se inicia calculando la frecuencia absoluta acumulada cuando se tienen tablas de frecuencias. Su formula es:</p>
+<p><span class="math display">\[F_i=\sum_{j=1}^{j=i} f_j\]</span>
+Luego se sigue el criterio de <span class="math inline">\(n\)</span> par o impar y se busca la posición como el valor más cercano por arriba dentro de las frecuencias absolutas acumuladas. Podemos hacer el cálculo:</p>
+<pre class="r"><code>t1$FI &lt;-cumsum(t1$fi)
+# 80 / 2 = 40 y 40 +1 = 41, el valor por arriba es 45 entonces: la mediana es 26</code></pre>
+<p><strong>2. Medidas de tendencia central para tabalas de frecuencia por intervalos</strong></p>
+<pre class="r"><code>set.seed(999)
+x &lt;- round(runif(80,15,35), 0)
+t2 &lt;- data.frame(lils=cut(x,5))
+t2 %&gt;% group_by(lils) %&gt;% count(name = &quot;fi&quot;)</code></pre>
+<pre><code>## # A tibble: 5 x 2
+## # Groups:   lils [5]
+##   lils       fi
+##   &lt;fct&gt;   &lt;int&gt;
+## 1 (15,19]    19
+## 2 (19,23]    13
+## 3 (23,27]    20
+## 4 (27,31]    16
+## 5 (31,35]    12</code></pre>
+</div>
+</div>
+<div id="medidas-de-variabilidad" class="section level1">
+<h1>3. Medidas de Variabilidad</h1>
+<p>Son medidas que nos indican el nivel de dispersión o variabilidad en un conjunto de datos. La mayoría de las medidas nos reflejan la concentración al rededor de la media.</p>
+<div id="rango" class="section level2">
+<h2>3.1. Rango</h2>
+<p>Calcula la distancia entre el valor más grande y el valor más pequeño del conjunto de datos. Su representación es como <span class="math inline">\(R\)</span>:</p>
+<p><span class="math display">\[R=X_{max}-X_{min}\]</span>
+Se puede aplicar a diferentes casos y es la medida más sencilla. Por ejemplo puede utilizarse para ver el salario menos y mayor.</p>
+</div>
+<div id="desviación-media-o-desviación-estandar" class="section level2">
+<h2>3.2. Desviación media o desviación estandar</h2>
+<p>Esta medida devuelve el promedio de las distancias de los datos a su promedio. La medición e interprestación se hace con las unidades originales del conjunto de datos.</p>
+<p><span class="math display">\[DM=\frac{\sum_s |x_i-\bar{x}|}{n}; \quad DM=\frac{\sum_{i=1}^{k} |x_i-\bar{x}|}{n};\]</span></p>
+<blockquote>
+<p>Ejemplo: Calcular desviación media del conjunto de datos</p>
+</blockquote>
+<p>-5 5 5 5 5 5 5:
+-3 3 4 5 6 7 7:
+-1 1 2 5 8 9 9:</p>
+<pre class="r"><code># Caso 1
+x &lt;- c(5,5,5,5,5,5,5)
+sum(abs(x - mean(x)))/7</code></pre>
+<pre><code>## [1] 0</code></pre>
+<pre class="r"><code># Caso 2
+x &lt;- c(3, 3, 4, 5, 6, 7, 7)
+sum(abs(x - mean(x)))/7</code></pre>
+<pre><code>## [1] 1.428571</code></pre>
+<pre class="r"><code># Caso 3
+x &lt;- c(1, 1, 2, 5, 8, 9, 9)
+x - mean(x) # Distancias</code></pre>
+<pre><code>## [1] -4 -4 -3  0  3  4  4</code></pre>
+<pre class="r"><code>abs(x-mean(x)) # Valor absoluto</code></pre>
+<pre><code>## [1] 4 4 3 0 3 4 4</code></pre>
+<pre class="r"><code>sum(abs(x - mean(x)))/7 </code></pre>
+<pre><code>## [1] 3.142857</code></pre>
+</div>
+<div id="varianza" class="section level2">
+<h2>3.3. Varianza</h2>
+<p>La varianza es la medida más usual en la estadística. Esta medida en si misma no tiene interpretación pero se la utiliza para obtener otras medidas como la desviación estándar y el coeficiente de variación que si tienen una interpretación. La varianza nos muestra el promedio de distancias al cuadrado.</p>
+<ul>
+<li><strong>Varianza poblacional (N)</strong></li>
+</ul>
+<p><span class="math display">\[V(x)=\sigma^2=\frac{\sum_U (x_i-\bar{x})^2}{N}\]</span></p>
+<p><span class="math inline">\((x_i-\bar{x})\)</span> se denomina desviación respecto a la de la media</p>
+<ul>
+<li><strong>Varianza muestral (n)</strong></li>
+</ul>
+<p><span class="math display">\[v(x)=s^2=\frac{\sum_s (x_i-\bar{x})^2}{n-1}\]</span></p>
+<blockquote>
+<p>Ejemplo: Calcular la varianza del conjunto de datos</p>
+</blockquote>
+<p>-3 3 4 5 6 7 7:
+-1 1 2 5 8 9 9:</p>
+<pre class="r"><code>#caso 2
+x &lt;- c(3, 3, 4, 5, 6, 7, 7)
+sum((x-mean(x))^2)/(7-1)</code></pre>
+<pre><code>## [1] 3</code></pre>
+<pre class="r"><code>#caso 3
+x &lt;- c(1, 1, 2, 5, 8, 9, 9)
+sum((x-mean(x))^2)/(7-1)</code></pre>
+<pre><code>## [1] 13.66667</code></pre>
+<p>El caso 3 tiene mayor variabilidad que los otros dos casos.</p>
+<ul>
+<li>Formula corta de la varianza muestral</li>
+</ul>
+<p><span class="math display">\[V(x)=s^2=\frac{\sum_s x_i^2-n \bar{x}}{n-1}\]</span></p>
+<blockquote>
+<p>Ejemplo: Calcular la varianza del conjunto de datos</p>
+</blockquote>
+<p>-1 1 2 5 8 9 9:</p>
+<pre class="r"><code># caso 3
+x &lt;- c(1, 1, 2, 5, 8, 9, 9)
+sum(x^2)</code></pre>
+<pre><code>## [1] 257</code></pre>
+<pre class="r"><code>(sum(x^2)-7*mean(x)^2)/(7-1)</code></pre>
+<pre><code>## [1] 13.66667</code></pre>
+</div>
+<div id="desviación-estandar" class="section level2">
+<h2>3.4. Desviación estandar</h2>
+<p>Esta medida si se puede interpretar porque ya no se encuentra elevada al cuadrado. El valor obtenido normalmente es cercano a la desviación media.</p>
+<ul>
+<li>Desvisación estándar poblacional</li>
+</ul>
+<p><span class="math display">\[\sigma=\sqrt{\sigma^2}\]</span></p>
+<ul>
+<li>Desviación estandar muestral</li>
+</ul>
+<p><span class="math display">\[\sigma=\sqrt{s^2}\]</span>
+&gt; Ejemplo: Calcular desviación estándar del conjunto de datos</p>
+<p>-1 1 2 5 8 9 9:</p>
+<pre class="r"><code>x &lt;- c(1, 1, 2, 5, 8, 9, 9)
+sqrt(var(x))</code></pre>
+<pre><code>## [1] 3.696846</code></pre>
+</div>
+<div id="coeficiente-de-variación" class="section level2">
+<h2>3.5. Coeficiente de variación</h2>
+<p>Es la única medida de variabilidad relativa (carece de unidad de medida). Se puede interpretar como el porcentaje en los datos que no se sienten representados por la media. Si se acerca al cero los datos se sientes representados por la media.</p>
+<p><span class="math display">\[cv=\frac{s}{\bar{x}}\]</span></p>
+<blockquote>
+<p>Ejemplo: Calcular desviación media del conjunto de datos</p>
+</blockquote>
+<p>-1 1 2 5 8 9 9:</p>
+<pre class="r"><code>x &lt;- c(1, 1, 2, 5, 8, 9, 9)
+round(sqrt(var(x)) / mean(x), 2)</code></pre>
+<pre><code>## [1] 0.74</code></pre>
+<p>En este ejemplo los datos estan dispersos y no se sientes representados por la media.</p>
+</div>
+<div id="rango-intercuartilico" class="section level2">
+<h2>3.6. Rango intercuartilico</h2>
+<p>Se tiene los sigueintes 100 datos de una población de personas respecto a su peso.</p>
+<pre class="r"><code>set.seed(111)
+x &lt;- round(rnorm(100,50,5),1)
+set.seed(111)
+y &lt;- round(rnorm(100,50,1),1)
+z &lt;- round(rnorm(100,50,15),1)
+hist(x)
+abline(v=median(x), col=&quot;red&quot;,lwd=2)</code></pre>
+<p><img src="{{< blogdown/postref >}}index.es_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<pre class="r"><code>par(mfrow=c(1,3))
+boxplot(x,ylim=c(30,65))
+boxplot(y,ylim=c(30,65))
+boxplot(z,ylim=c(30,65))</code></pre>
+<p><img src="{{< blogdown/postref >}}index.es_files/figure-html/unnamed-chunk-14-2.png" width="672" /></p>
+<p>El diagrama de caja nos muestra el rango intercurtil. La caja contiene el 50% de la población.Fuera de las lineas se muestran los datos atípicos.</p>
+</div>
+<div id="índice-de-diversidad" class="section level2">
+<h2>3.7. Índice de diversidad</h2>
+<p>Este se utiliza para variables cualitativas a diferencia de todas las medidas de variabilidad vistas anteriormente. Nos ayuda a medir la <strong>homogeneidad</strong> y <strong>heterogeneidad</strong> de las catagorías observadas en nuestra variable cualitativa.</p>
+<p>Para la diversidad se utilizan 3 formulas para su cálculo, las primeras dos no tienen una interpretación importante:</p>
+<p><span class="math display">\[H&#39;=\frac{n log (n)-\sum_{i=1}^k f_i log(f_i)}{n}\]</span></p>
+<p><span class="math display">\[H&#39;_{max}=log(k)\]</span></p>
+<p><span class="math inline">\(J&#39;\)</span> es una medida de homogeneida y esta acotada entre el 0 y 1. Y sirve para poblaciones grandes.</p>
+<p><span class="math display">\[J&#39;=\frac{H&#39;}{H&#39;_{max}}\]</span></p>
+<ul>
+<li><span class="math inline">\(J&#39; \rightarrow 1\)</span> Alta homogeneidad, categorías iguales</li>
+<li><span class="math inline">\(J&#39; \rightarrow 0\)</span> Alta Heterogeneidad, categprías diferentes.</li>
+</ul>
+<blockquote>
+<p>Ejemplo</p>
+</blockquote>
+<p>Tenemos los datos de una muestra de 20 gorriones y sus sitios de nido.</p>
+<pre class="r"><code>nidos &lt;- c(&quot;vides&quot;, &quot;alero&quot;, &quot;ramas&quot;, &quot;cueva&quot;)
+f &lt;- c(5,5,5,5)
+t1 &lt;- data.frame(nidos, f)
+t1</code></pre>
+<pre><code>##   nidos f
+## 1 vides 5
+## 2 alero 5
+## 3 ramas 5
+## 4 cueva 5</code></pre>
+<p>Para calcular <span class="math inline">\(H&#39;\)</span>:</p>
+<p><span class="math display">\[H&#39;=\frac{20 log (20) -(5log(5) + 5log(5) + 5log(5) + 5log(5))}{20}\]</span></p>
+<pre class="r"><code># Resultado
+log10(20)-log10(5)</code></pre>
+<pre><code>## [1] 0.60206</code></pre>
+<p><span class="math display">\[H&#39;_{max}=log(k)=log=(4) = 0.60206\]</span></p>
+<p>El índice de diversidad es:</p>
+<p><span class="math display">\[J&#39;=\frac{H&#39;}{H&#39;_{max}}=\frac{0.60206}{0.60206}=1\]</span></p>
+<p>Los gorriones no tienen preferencia por los nidos.</p>
+<p><strong>Notas Adicionales:</strong></p>
+<ul>
+<li>Si <span class="math inline">\(J&#39;&gt;0.9\)</span> Alta homogeneidad</li>
+<li>Si <span class="math inline">\(J&#39;&lt;0.6\)</span> Heterogeneidad</li>
+<li>Si <span class="math inline">\(J&#39;&lt;0.5\)</span> Alta heterogeneidad</li>
+</ul>
+</div>
+</div>
+<div id="medidas-de-formas" class="section level1">
+<h1>4. Medidas de formas</h1>
+<p>Son medidas más visuales para ver las distribuciones de los datos.</p>
+<div id="asimetría" class="section level2">
+<h2>4.1. Asimetría</h2>
+<p><span class="math display">\[As_{fisher}=\frac{\mu_3}{s^3}\]</span></p>
+<p><span class="math display">\[\mu_3=\frac{\sum_s (x_i-\bar{x})^3}{n}\]</span></p>
+<ul>
+<li>Si <span class="math inline">\(A_s = 0\)</span> es simetrico</li>
+<li>Si <span class="math inline">\(A_s &gt; 0\)</span> es simetrico positivo</li>
+<li>Si <span class="math inline">\(A_s &lt; 0\)</span> es simetrico negativo</li>
+</ul>
+</div>
+<div id="kurtosis" class="section level2">
+<h2>4.2. Kurtosis</h2>
+<p>Da una medida sobre la forma de distribuciones.</p>
+<p><span class="math display">\[k=\frac{\mu_4}{s^4}\]</span></p>
+<p><span class="math display">\[\mu_4=\frac{\sum_s (x_i-\bar{x})^4}{n}\]</span></p>
+</div>
+<div id="quantiles" class="section level2">
+<h2>4.3. Quantiles</h2>
+<p>Son acumulaciones en la curva de datos o puntos de acumulación.</p>
 </div>
 </div>
