@@ -26,7 +26,7 @@ projects: []
 
 <div id="estadística-descriptiva-con-r" class="section level1">
 <h1>Estadística Descriptiva con R</h1>
-<p>La estadística puede definirse como el arte de contar una historia con datos. Esta se beneficia de la información que se ecnuentran en los datos, es decir, los datos son la fuente primeria.</p>
+<p>La estadística puede definirse como el arte de contar una historia con datos. Esta se beneficia de la información que se ecnuentran en los datos, es decir, los datos son la fuente primaria.</p>
 <p>La estadística cubre los métodos y técnicas detras de los procesos de recolección de información, el procesamiento de datos, el análisis de la información y visualización de la información. La estadística es una ciencia transversal y se encuentra en todas las ciencias exactas y sociales.</p>
 <p><strong>Usos de la Estadística</strong></p>
 <ul>
@@ -44,13 +44,6 @@ projects: []
 <li><p>Minería de Texto</p></li>
 <li><p>Estadística multivariante</p></li>
 </ul>
-<p>Tenemos una población:</p>
-<pre><code>##   [1] 186  46  83  85  50  80 159 174 139 105  50 117  69 107  66  73   8 188
-##  [19]   1  67 105 164  65 177 122  19 174  80  81  84 180 184 194  72 146  63
-##  [37]  82  44 142 151 112 172  18  81 162 142 164  20  83  23 108 166 153 162
-##  [55] 103  67  78 188  91 138  89 124 162 151 180  91 119  57 188  36 143 170
-##  [73] 156 188  96 113  46  62 187 141 121  97 100 102  18  55  87  47 138 133
-##  [91] 173 191 118  13   2 178 117  59  52 125</code></pre>
 </div>
 <div id="estadística-descriptiva" class="section level1">
 <h1>1. Estadística descriptiva</h1>
@@ -372,12 +365,12 @@ y &lt;- round(rnorm(100,50,1),1)
 z &lt;- round(rnorm(100,50,15),1)
 hist(x)
 abline(v=median(x), col=&quot;red&quot;,lwd=2)</code></pre>
-<p><img src="{{< blogdown/postref >}}index.es_files/figure-html/unnamed-chunk-14-1.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index.es_files/figure-html/unnamed-chunk-13-1.png" width="672" /></p>
 <pre class="r"><code>par(mfrow=c(1,3))
 boxplot(x,ylim=c(30,65))
 boxplot(y,ylim=c(30,65))
 boxplot(z,ylim=c(30,65))</code></pre>
-<p><img src="{{< blogdown/postref >}}index.es_files/figure-html/unnamed-chunk-14-2.png" width="672" /></p>
+<p><img src="{{< blogdown/postref >}}index.es_files/figure-html/unnamed-chunk-13-2.png" width="672" /></p>
 <p>El diagrama de caja nos muestra el rango intercurtil. La caja contiene el 50% de la población.Fuera de las lineas se muestran los datos atípicos.</p>
 </div>
 <div id="índice-de-diversidad" class="section level2">
