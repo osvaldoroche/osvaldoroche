@@ -1,0 +1,11 @@
+# Font style metadata
+name = "my_font_set"
+
+# Optional Google font URL
+google_fonts = "family=Kdam+Thmor+Pro"
+
+# Font families
+heading_font = "Kdam Thmor Pro"
+body_font = "Kdam Thmor Pro"
+nav_font = "Kdam Thmor Pro"
+mono_font = "Kdam Thmor Pro"

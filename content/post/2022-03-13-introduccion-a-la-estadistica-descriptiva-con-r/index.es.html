@@ -1,13 +1,12 @@
 ---
-title: Introducción a la Estadística Descriptiva con R. Notas del curso I.
-author: Osvaldo Roche
-date: '21/04/2022'
+title: "Introducción a la Estadística Descriptiva con R. Notas del curso I."
+author: "Osvaldo Roche"
+date: "21/04/2022"
 slug: introduccion a la estadistica descriptiva con R
-categories:
-  - Estadística
+categories: Estadística
 tags:
-  - R
-  - Estadistica
+- R
+- Estadistica
 subtitle: ''
 summary: ''
 authors: []
@@ -46,12 +45,12 @@ projects: []
 <li><p>Estadística multivariante</p></li>
 </ul>
 <p>Tenemos una población:</p>
-<pre><code>##   [1]  66 135  16  90 139 191 100  68 171  77 186 177 138  90  17  99 199 138
-##  [19] 124 159 100 107  80  57 196 168 189  38 151 198  83 123  51  63  12 176
-##  [37] 148 122 137 162  65 164 106  12 154   7  22 133 110 170 189  98 182  47
-##  [55] 165  74 185 192  25  82  42  50  96  78  27   7 149  91  64 157  80  24
-##  [73]  30 102 196 151 179 170   4 140  79 128 160 183   4 194  37  10  55  66
-##  [91]  90  10 151  32  93  64 145  56  59  94</code></pre>
+<pre><code>##   [1] 186  46  83  85  50  80 159 174 139 105  50 117  69 107  66  73   8 188
+##  [19]   1  67 105 164  65 177 122  19 174  80  81  84 180 184 194  72 146  63
+##  [37]  82  44 142 151 112 172  18  81 162 142 164  20  83  23 108 166 153 162
+##  [55] 103  67  78 188  91 138  89 124 162 151 180  91 119  57 188  36 143 170
+##  [73] 156 188  96 113  46  62 187 141 121  97 100 102  18  55  87  47 138 133
+##  [91] 173 191 118  13   2 178 117  59  52 125</code></pre>
 </div>
 <div id="estadística-descriptiva" class="section level1">
 <h1>1. Estadística descriptiva</h1>
@@ -170,189 +169,22 @@ set.seed(999)
 x &lt;- round(runif(80,15,35), 0)
 x &lt;- data.frame(x)
 t1 &lt;- x %&gt;% group_by(x) %&gt;% count(name = &quot;fi&quot;) 
-t1 %&gt;% kable(align = &quot;c&quot;) %&gt;% kable_classic()</code></pre>
-<table class=" lightable-classic" style="font-family: &quot;Arial Narrow&quot;, &quot;Source Sans Pro&quot;, sans-serif; margin-left: auto; margin-right: auto;">
-<thead>
-<tr>
-<th style="text-align:center;">
-x
-</th>
-<th style="text-align:center;">
-fi
-</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align:center;">
-15
-</td>
-<td style="text-align:center;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-16
-</td>
-<td style="text-align:center;">
-4
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-17
-</td>
-<td style="text-align:center;">
-7
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-18
-</td>
-<td style="text-align:center;">
-4
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-19
-</td>
-<td style="text-align:center;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-20
-</td>
-<td style="text-align:center;">
-3
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-21
-</td>
-<td style="text-align:center;">
-3
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-22
-</td>
-<td style="text-align:center;">
-4
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-23
-</td>
-<td style="text-align:center;">
-3
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-24
-</td>
-<td style="text-align:center;">
-5
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-25
-</td>
-<td style="text-align:center;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-26
-</td>
-<td style="text-align:center;">
-6
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-27
-</td>
-<td style="text-align:center;">
-7
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-28
-</td>
-<td style="text-align:center;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-29
-</td>
-<td style="text-align:center;">
-2
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-30
-</td>
-<td style="text-align:center;">
-4
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-31
-</td>
-<td style="text-align:center;">
-8
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-32
-</td>
-<td style="text-align:center;">
-8
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-33
-</td>
-<td style="text-align:center;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-34
-</td>
-<td style="text-align:center;">
-1
-</td>
-</tr>
-<tr>
-<td style="text-align:center;">
-35
-</td>
-<td style="text-align:center;">
-2
-</td>
-</tr>
-</tbody>
-</table>
+t1 #%&gt;% kable(align = &quot;c&quot;) %&gt;% kable_styling()</code></pre>
+<pre><code>## # A tibble: 21 x 2
+## # Groups:   x [21]
+##        x    fi
+##    &lt;dbl&gt; &lt;int&gt;
+##  1    15     2
+##  2    16     4
+##  3    17     7
+##  4    18     4
+##  5    19     2
+##  6    20     3
+##  7    21     3
+##  8    22     4
+##  9    23     3
+## 10    24     5
+## # ... with 11 more rows</code></pre>
 <p>Calcule la moda, la mediana y el promedio.</p>
 <p><strong>a) Media o Promedio:</strong> Cuando se tiene tablas de frecuencia como la anterior la formula a utilizar es la siguiente:</p>
 <p><span class="math display">\[\bar{x}=\frac{\sum_{i=1}^k x_i*f_i}{n}\]</span></p>

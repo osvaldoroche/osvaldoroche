@@ -1,13 +1,12 @@
 ---
-title: Introducción a la Estadística Descriptiva con R. Notas del curso I.
-author: Osvaldo Roche
-date: '21/04/2022'
+title: "Introducción a la Estadística Descriptiva con R. Notas del curso I."
+author: "Osvaldo Roche"
+date: "21/04/2022"
 slug: introduccion a la estadistica descriptiva con R
-categories:
-  - Estadística
+categories: Estadística
 tags:
-  - R
-  - Estadistica
+- R
+- Estadistica
 subtitle: ''
 summary: ''
 authors: []
@@ -202,7 +201,7 @@ set.seed(999)
 x <- round(runif(80,15,35), 0)
 x <- data.frame(x)
 t1 <- x %>% group_by(x) %>% count(name = "fi") 
-t1 %>% kable(align = "c") %>% kable_classic()
+t1 #%>% kable(align = "c") %>% kable_styling()
 ```
 
 
