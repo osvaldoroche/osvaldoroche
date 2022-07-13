@@ -1,5 +1,5 @@
 ---
-bio: Osvlado Roche.
+bio: Osvaldo Roche.
 #education:
 #  courses:
 #  - course: PhD in Artificial Intelligence
@@ -13,13 +13,13 @@ bio: Osvlado Roche.
 #    year: 2008
 email: ""
 highlight_name: true
-interests:
-- Inteligencia Artificial
-- Economía y Negocios
-- Investigación cuantitativa
+#interests:
+#- Economía y Negocios
+#- Investigación
+#- Inteligencia Artificial
 organizations:
 - name: Universidad de El Salvador
-  url: https://www.stanford.edu/
+  url: https://www.ues.edu.sv/
 role: Estudiante de Economía
 social:
 - icon: envelope
@@ -31,20 +31,26 @@ social:
   icon_pack: fab
   label: Follow me on Twitter
   link: https://twitter.com/rocheosvaldo
-- icon: graduation-cap
-  icon_pack: fas
-  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
+#- icon: graduation-cap
+#  icon_pack: fas
+#  link: https://scholar.google.co.uk/citations?user=sIwtMXoAAAAJ
 - icon: github
   icon_pack: fab
-  link: https://github.com/gcushen
+  link: https://github.com/osvaldoroche
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/
+  link: https://www.linkedin.com/in/osvaldo-roche-6b57201b4/
 superuser: true
 title: Osvaldo Roche
 ---
 
-Soy Estudiante de Economía y apasionado por la ciencia de Datos. Este espacio es para explicar temas que me enseñana en la Universidad o aprendo de forma autodidacta para practicarlos de manera más formal y con orientación a la realidad. 
+Soy Estudiante de Economía y autodidacta en la ciencia de Datos este espacio es para exporner y explicar temas que aprendo a lo largo de mi vida académica. 
 
+{{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "uploads/resum.pdf" "newtab" >}}Currículum{{< /staticref >}}.
 
-{{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "uploads/resume.pdf" "newtab" >}}Currículum{{< /staticref >}}.
+**Mis Intereses**
+
+- Economía y Negocios
+- Investigación
+- Análisis de datos
+- Inteligencia Artificial
