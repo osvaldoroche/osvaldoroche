@@ -20,6 +20,7 @@ projects: []
 ---
 
 # Estadística Descriptiva con R
+{style="color: red"}
 
 La estadística puede definirse como el arte de contar una historia con datos. Esta se beneficia de la información que se ecnuentran en los datos, es decir, los datos son la fuente primaria. 
 

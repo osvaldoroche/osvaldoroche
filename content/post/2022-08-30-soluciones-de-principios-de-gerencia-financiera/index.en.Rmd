@@ -1,0 +1,296 @@
+---
+title: Soluciones de principios de gerencia financiera
+author: Osvaldo Roche
+date: '2022-08-30'
+slug: soluciones-de-principios-de-gerencia-financiera
+categories:
+  - Estadística
+  - Economía
+  - Finanzas
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2022-08-30T20:12:35-06:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+# Capítulo 1.
+
+## 1. ¿Que es la gerencia financiera?
+
+Es la encargada de administración eficiente del capital de trabajo, teniendo en cuenta los criterios de riesgo y rentabilidad. orienta la estrategia financiera para garantizar fuentes de financiamiento.
+
++ Encargada de conseguir dinero
++ Mantener relaciones con inversionistas
++ Administración de costos y flujos de efectivo
+
+## 2. Nombre 3 herramientas básicas en la que se basa la gerencia financiera
+
++ Toma de decisiones
++ Pronostico y presupuesto
++ Evaluación de proyectos y evaluación de activos
+
+## 3. ¿Cuáles son las funciones de un gerente financiero?
+
+a) Maximización del valor de la empresa y recuperación de la inversión
+
+b) Financiar las operaciones de la empresa al menor costo
+
+c) Orientación eficiente de los recursos financieros
+
+d) Optimizar uso de los recursos financieros
+
+e) Mantener liquidez para gastos e inversión
+
+f) Planificación financiera a Corto Plazo y Largo Plazo
+
+g) Relacionar variables macroeconómicas y el flujo de efectivo con las decisiones de largo plazo.
+
+h) Evaluar financiamiento a corto y largo plazo referidas a riesgo y rendimiento de las operaciones e inversiones de la empresa.
+
+## 4. Cite 4 actividades a las que se dedica el gerente financiero
+
+1- Evaluaciones de corto y largo plazo
+
+2- Orientar la financiación de las operaciones de la empresa al menor costo posible.
+
+3- Optimizar recursos financieros
+
+4- Realizar planificación financiera.
+
+## 5. Cite 3 áreas con las que se relaciona la gerencia financiera
+
+1- Contabilidad
+2- Presupuesto
+3- Producción
+
+
+## 6. ¿Por qué es importante para las finanzas la organización empresarial?
+
+Porque la gerencia financiera se encarga de la conducción de las finanzas de la empresa y de las estrategias para generar flujos de efectivo que permitan la creación de valor económico.
+
+## 7. ¿Cómo se clasifican las empresas?
+
++ Por actividad
++ Por tamaño
++ por propiedad
++ Por número de propietarios
+
+## 8. Las empresas según actividad se clasifican en
+
+- Por actividad
+  + Agropecuarias
+  + Mineras
+  + Industriales
+  + Comerciales
+  + Servicios
+  
+## 9. Las empresas según actividad se clasifican en
+
+- Por tamaño
+  + microempresa
+  + Pequeña empresa
+  + Mediana empresa
+  + Gran empresa
+  
+## 10. Las empresas según origen de los recursos se clasifican en
+
+- Por propiedad
+  + Privada
+  + Pública
+  + Mixta
+  
+## 11. ¿Cómo se clasifican según el número de propietarios?
+  
+- Por número de propiedarios
+  + individuales
+  + Unipersonales
+  + Sociedades
+  
+## 12. ¿Una sociedad es?
+
+Forma de organizarse en donde 2 o más personas por medio de un convenio acuerdan crear una sociedad para comercializar o producir bienes para la venta o prestar un servicio.
+
+
+## 13. ¿Cómo se clasifican las sociedades?
+
+- Sociedades de personas
+  + Colectiva
+  + Comandita simple
+  + Responsabilidad limitada
+  
+- sociedades de capital
+  + Anonima
+  + Comandita por acción
+  
+## 14. Las funciones de la empresa son 6 cítelas
+
++ Función técnica
++ Función comercial
++ Función Contable
++ Función Financiera
++ Función administrativa
++ Función de seguridad
+
+## 15. ¿Cuáles son los principales estados financieros?
+
++ Balance general
++ Estado de resultados
+
+## 16. Cuáles son los elementos del balance general
+
++ Activos
++ pasivos
++ Patrimonio
+
+## 17. Cuáles son los elementos del estado de resultados
+
++ Ingresos
++ Costos 
++ Gastos
+
+## 18. Desde el punto de vista de su compocisión ¿cómo se analiza el balance general?
+
+Desde la naturaleza del negocio, del tipo de producto y de las estrategias de administración de activos. debe tomar en decisiones acerca del efectivo versus valores negociables, ventas versus crédito versus ventas al contado, producir o comprar insumos, en qué porcentaje participará en la inversión planificada y así sucesivamente. 
+
+## 19. Cite las tres preguntas del mundo de las finanzas
+
+1- ¿En qué tipo de activos debería invertir la empresa?
+
+2- ¿Cómo puede obtener la empresa el efectivo necesario para los gastos de capital?
+
+3- ¿Cómo deben administrarse los flujos de efectivo a corto plazo?
+
+
+## 20. ¿Qué es el análisis financiero y como se divide?
+
+Consiste en la evaluación de las perspectivas económicas y de los riesgos que enfrenta la empresa en el corto y largo plazo.se divide en dos:
+
++ Análisis de corto plazo: Administración de activos y pasivos corrientes.
+
++ Análisis de largo plazo: busca establecer la capacidad de la empresa de generar valor económico a partir de las decisiones de corto plazo por medio de la búsqueda de inversiones productivas que generen flujos de efectivos.
+
+# Capítulo 2
+
+## 1. ¿Qué implica la adminsitración de capital de trabajo desde el punto de vista del gerente financiero?
+
+Tomar decisiones sobre el tipo de financiamiento que se utilizará en el corto plazo.
+
+## 2. ¿Cómo se calcula el ciclo operativo del efectivo?
+
+Se calcula en 5 pasos:
+
+**Paso 1: Calcular la rotación de cuentas por cobrar** 
+
+$$RCC = \frac{Ventas}{Cuentas*Cobrar}$$
+
+**Paso 2: Calcular los días para cobrar**
+
+$$PCC = \frac{360}{RCC}$$
+
+**Paso 3: Calcular la rotación de inventarios**
+
+$$RI = \frac{Costo~de~lo~vendido}{Inventario~promedio}$$
+
+**Paso 4: Calcular los días de inventario** 
+
+$$PCI = \frac{360}{RI}$$
+
+**Paso 5: Calcular ciclo operativo**
+
+$$Ciclo operativo = PCC + PCI$$
+
+## 3. ¿Qué es el ciclo operativo?
+
+Es el proceso desde que se compra la materia prima hasta que se cobra el producto al cliente final por la venta.
+
+## 4. ¿Cómo se calcula la relación de efectivo?
+
+se calcula en 3 pasos:
+
+**Paso 1: Calcular la rotación de cuentas por pagar**
+
+$$PCP = \frac{Compras~al~crédito}{Promedio~Ctas.~Pagar}$$
+
+**Paso 2: Calcular ciclo conversión de efectivo**
+
+$$CCE = PCI + PCC + PCP$$
+
+**Paso 3: Calcular rotación de efectivo**
+
+$$RE = \frac{360}{CCE}$$
+
+
+## 5. ¿Cómo se calcula el efectivo mínimo operativo de la empresa?
+
+Es el efectivo mínimo que la empresa necesita para operar en el corto plazo y se calcula como:
+
+$$EMO = \frac{Desembolsos~Operacionales~Planificados}{Rotación~de~Efectivo}$$
+
+## 6. ¿Por qué decimos que el crédito es una fuente de financiamiento de corto plazo?
+
+Porque se obtiene de los proveedores de corto plazo. Puede ser con garantía o sin garantía.
+
+## 7. ¿Cuáles son los motivos que tiene la empresa para mantener liquidez?
+
++ Motivo Transacción
++ Motivo Precaución
++ Motivo Especulación
+
+## 8. ¿Qué es el presupuesto de caja?
+
+Es una herramienta financiera, su fin es estimar los saldos disponibles a partir de los pronósticos de las futuras salidas o entradas de efectivo de la empresa.
+
+## 9. Cite 4 objetivos del presupuesto de caja
+
++ Determinar saldo de caja al final de un periodo.
+
++ Identificar los excedentes o déficits de efectivo y tomar medidas correctoras.
+
++ Establecer las necesidades de efectivo, por tanto, financiamiento en algún momento del periodo que abarque el presupuesto.
+
++ Establecer bases para tomar decisiones.
+
+## 10. ¿Qué es un pronóstico de ventas?
+
+Es una herramienta comercial que permite estimar las ventas a futuro, con el fin de establecer metas en un determinado periodo.
+
+## 11. ¿Qué factores se deben tomar en cuenta cuando se realiza un pronóstico de ventas?
+
++ Capacidad del negocio
+
++ La estacionalidad de las ventas
+
++ Las expectativas de las ventas
+
++ La estimación de la demanda y de la oferta
+
++ El entorno económico
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
