@@ -205,21 +205,22 @@ $$PCI = \frac{360}{RI}$$
 
 **Paso 5: Calcular ciclo operativo**
 
-$$Ciclo operativo = PCC + PCI$$
+$$Ciclo~operativo = PCC + PCI$$
 
 ## 3. ¿Qué es el ciclo operativo?
 
 Es el proceso desde que se compra la materia prima hasta que se cobra el producto al cliente final por la venta.
 
-## 4. ¿Cómo se calcula la relación de efectivo?
+## 4. ¿Cómo se calcula la rotación de efectivo?
 
 se calcula en 3 pasos:
 
 **Paso 1: Calcular la rotación de cuentas por pagar**
 
-$$PCP = \frac{Compras~al~crédito}{Promedio~Ctas.~Pagar}$$
+$$RCP = \frac{Compras~al~crédito}{Promedio~Ctas.~Pagar}$$
+$$PCP=\frac{360}{RCP}$$
 
-**Paso 2: Calcular ciclo conversión de efectivo**
+**Paso 2: Calcular ciclo conversión de efectivo o ciclo de efectivo**
 
 $$CCE = PCI + PCC + PCP$$
 
@@ -274,9 +275,76 @@ Es una herramienta comercial que permite estimar las ventas a futuro, con el fin
 
 + El entorno económico
 
+## 12. Cite algunas técnicas de pronóstico de ventas
 
+1- Método de incremento procentual
+2- Método de incremento absoluto
+3- Método de promedios moviles
+4- Método de mínimos cuadrados
+5- Método geométrico
 
+## 13. ¿En qué consiste el método de incremento absoluto?
 
+## 14. ¿En qué consiste el método de incremento porcentual?
+
+## 15. ¿Qué es el método de los promedios moviles?
+
+## 16. ¿Qué es el método de los mínimos cuadrados?
+
+## 17. ¿Cuáles son los métodos de tratamiento del efectivo?
+
+## 18. ¿En qué consiste el método de efectivo de Baumol?
+
+## 19. ¿En qué consiste el método de efectivo de miller Orr?
+
+## 20. ¿En que consiste la desinversión?
+
+**EJERCICIOS PRACTICOS**
+
+## 1. Compañia la bonita
+
+La compañia la bonita se encuentra analizando la administración del efectivo y analiza con todo su equipo de gestión operativa el comportamiento de la compañia para ello toma la siguiente información:
+
+Información               | valor            |
+--------------------------|------------------|
+Compras al crédito | $780,000
+Costo de venta | $900,000
+Desembolso total al año | $1,350,000
+Inventario promedio | $135,000
+Promedio de cuentas por pagar  | $78,000
+Promedio de cuentas por cobrar | $240,000
+Ventas al crédito    | $1,200,000
+
+```{r, message=FALSE, warning=FALSE, echo=FALSE}
+library(tidyverse)
+cuadro <- tibble(
+  a = c("Compras al crédito", "costo de venta", "Dsembolso total al año", "Inventario promedio", "Promedio de cuentas por pagar", "Promedio de cuentas por cobrar", "Ventas al crédito"),
+  b = c(780000,900000,1350000,135000,78000,240000,1200000))
+```
+
+> a) Determine ciclo de efectivo de la empresa, la rotación, el Efectivo Mínimo de Operación y el costo de oportunidad de mantener saldo en caja.
+
+**Ciclo de Efectivo de la empresa**
+
+$$RCC = \frac{Ventas}{Cuentas*Cobrar}= \frac{1,200,000}{240,000}=5~veces$$
+
+$$PCC = \frac{360}{RCC}=\frac{360}{5}=72~días$$
+
+$$RI = \frac{Costo~de~lo~vendido}{Inventario~promedio}=\frac{900,000}{135,000}=6.67~veces$$
+$$PCI = \frac{360}{RI}=\frac{360}{6.67}=54~días$$
+
+$$Ciclo~operativo = PCC + PCI=72+54=126~dias$$
+
+$$RCP = \frac{Compras~al~crédito}{Promedio~Ctas.~Pagar}=\frac{900,000}{78,000}=11.5~veces$$
+$$PCP=\frac{360}{RCP}=\frac{360}{11.5}=31~días$$
+
+$$CCE = PCI + PCC - PCP=54+72-31=95~días$$
+
+**Rotación de efectivo**
+
+$$RE = \frac{360}{CCE}=\frac{360}{95}=3.78~veces$$
+
+> b) El administrador financiero propone a través de nuevas estrategias se puede lograr incrementar el periodo promedio de pago a 40 días. Determine el ciclo de efectivo, la reotación de efectivo, el efectivo mínimo de operación y el costo de oportunidad por mantener el saldo en caja.
 
 
 
