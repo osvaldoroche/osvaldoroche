@@ -330,19 +330,24 @@ cuadro <- tibble(
 
 **Ciclo de Efectivo de la empresa:**
 
-$$RCC = \frac{Ventas}{Cuentas*Cobrar}= \frac{1,200,000}{240,000}=5~veces$$
+$$RCC = \frac{Ventas}{Cuentas*Cobrar}$$
+$$RCC= \frac{1,200,000}{240,000}=5~veces$$
 
-$$PCC = \frac{360}{RCC}=\frac{360}{5}=72~días$$
+$$PCC=\frac{360}{RCC}=\frac{360}{5}=72~días$$
 
-$$RI = \frac{Costo~de~lo~vendido}{Inventario~promedio}=\frac{900,000}{135,000}=6.67~veces$$
+$$RI = \frac{Costo~de~lo~vendido}{Inventario~promedio}$$
+$$RI=\frac{900,000}{135,000}=6.67~veces$$
 $$PCI = \frac{360}{RI}=\frac{360}{6.67}=54~días$$
 
-$$Ciclo~operativo = PCC + PCI=72+54=126~dias$$
+$$Ciclo~operativo=COE= PCC + PCI$$
+$$COE=72+54=126~dias$$
 
-$$RCP = \frac{Compras~al~crédito}{Promedio~Ctas.~Pagar}=\frac{900,000}{78,000}=11.5~veces$$
+$$RCP = \frac{Compras~al~crédito}{Promedio~Ctas.~Pagar}$$
+$$RCP=\frac{900,000}{78,000}=11.5~veces$$
 $$PCP=\frac{360}{RCP}=\frac{360}{11.5}=31~días$$
 
-$$CCE = PCI + PCC - PCP=54+72-31=95~días$$
+$$CCE = PCI + PCC - PCP$$
+$$CCE=54+72-31=95~días$$
 
 **Rotación de efectivo:**
 
@@ -352,7 +357,9 @@ RE = \frac{360}{CCE}=\frac{360}{95}=3.78~veces \dots \\
 
 **Efectivo Mínimo de operación:**
 
-$$EMO = \frac{Desembolsos~Operacionales~Planificados}{Rotación~de~Efectivo}$$
+DOP: Desembolsos Operacionales Planificados
+
+$$EMO = \frac{DOP}{RE}$$
 $$EMO = \frac{1,350,000}{3.78~veces}= 357,142.86~dólares$$
 
 **Costo de oportunidad de mantener saldo en caja:**
