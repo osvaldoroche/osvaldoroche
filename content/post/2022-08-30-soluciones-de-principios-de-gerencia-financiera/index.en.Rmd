@@ -236,7 +236,8 @@ $$RE = \frac{360}{CCE}$$
 
 Es el efectivo mínimo que la empresa necesita para operar en el corto plazo y se calcula como:
 
-$$EMO = \frac{Desembolsos~Operacionales~Planificados}{Rotación~de~Efectivo}$$
+$DOP$=Desembolsos Operacionales Planificados
+$$EMO = \frac{DOP}{RE}$$
 
 ## 6. ¿Por qué decimos que el crédito es una fuente de financiamiento de corto plazo?
 
@@ -302,7 +303,11 @@ Es una herramienta comercial que permite estimar las ventas a futuro, con el fin
 
 ## 20. ¿En que consiste la desinversión?
 
-**EJERCICIOS PRACTICOS**
+<br>
+
+## EJERCICIOS PRACTICOS
+
+<br>
 
 ## 1. Compañia la bonita
 
@@ -326,9 +331,10 @@ cuadro <- tibble(
 ```
 
 
-> a) Determine ciclo de efectivo de la empresa, la rotación, el Efectivo Mínimo de Operación y el costo de oportunidad de mantener saldo en caja.
+a) Determine ciclo de efectivo de la empresa, la rotación, el Efectivo Mínimo de Operación y el costo de oportunidad de mantener saldo en caja.
 
-**Ciclo de Efectivo de la empresa:**
+
+>Ciclo de Efectivo de la empresa
 
 $$RCC = \frac{Ventas}{Cuentas*Cobrar}$$
 $$RCC= \frac{1,200,000}{240,000}=5~veces$$
@@ -349,28 +355,27 @@ $$PCP=\frac{360}{RCP}=\frac{360}{10}=36~días$$
 $$CCE = PCI + PCC - PCP$$
 $$CCE=54+72-36=90~días$$
 
-**Rotación de efectivo:**
+>Rotación de efectivo
 
 $\begin{aligned}
-RE = \frac{360}{CCE}=\frac{360}{90}=4~veces \dots \\
+RE = \frac{360}{CCE}=\frac{360}{90}=4~veces \\
 \end{aligned}$
 
-**Efectivo Mínimo de operación:**
+>Efectivo Mínimo de operación
 
 DOP: Desembolsos Operacionales Planificados
 
 $$EMO = \frac{DOP}{RE}$$
 $$EMO = \frac{1,350,000}{4~veces}=\$337,500$$
 
-**Costo de oportunidad de mantener saldo en caja:**
+>Costo de oportunidad de mantener saldo en caja:
 
 $$CO = EMO * i$$
 $$CO = 337,500*0.085=\$28,012.5$$
 
-
 La empresa pierde $\$28,012.5$ dólares por tener un EMO de $\$337,500$ en caja.
 
-> b) El administrador financiero propone a través de nuevas estrategias se puede lograr incrementar el periodo promedio de pago a 40 días. Determine el ciclo de efectivo, la reotación de efectivo, el efectivo mínimo de operación y el costo de oportunidad por mantener el saldo en caja.
+b) El administrador financiero propone a través de nuevas estrategias se puede lograr incrementar el periodo promedio de pago a 40 días. Determine el ciclo de efectivo, la reotación de efectivo, el efectivo mínimo de operación y el costo de oportunidad por mantener el saldo en caja.
 
 $\begin{aligned}
 AR(p): Y_i &= c + \epsilon_i + \phi_i Y_{i-1} \dots \\
