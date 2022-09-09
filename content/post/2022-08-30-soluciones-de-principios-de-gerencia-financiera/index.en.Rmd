@@ -343,16 +343,16 @@ $$Ciclo~operativo=COE= PCC + PCI$$
 $$COE=72+54=126~dias$$
 
 $$RCP = \frac{Compras~al~crédito}{Promedio~Ctas.~Pagar}$$
-$$RCP=\frac{900,000}{78,000}=11.5~veces$$
-$$PCP=\frac{360}{RCP}=\frac{360}{11.5}=31~días$$
+$$RCP=\frac{780,000}{78,000}=10~veces$$
+$$PCP=\frac{360}{RCP}=\frac{360}{10}=36~días$$
 
 $$CCE = PCI + PCC - PCP$$
-$$CCE=54+72-31=95~días$$
+$$CCE=54+72-36=90~días$$
 
 **Rotación de efectivo:**
 
 $\begin{aligned}
-RE = \frac{360}{CCE}=\frac{360}{95}=3.78~veces \dots \\
+RE = \frac{360}{CCE}=\frac{360}{90}=4~veces \dots \\
 \end{aligned}$
 
 **Efectivo Mínimo de operación:**
@@ -360,14 +360,15 @@ RE = \frac{360}{CCE}=\frac{360}{95}=3.78~veces \dots \\
 DOP: Desembolsos Operacionales Planificados
 
 $$EMO = \frac{DOP}{RE}$$
-$$EMO = \frac{1,350,000}{3.78~veces}= 357,142.86~dólares$$
+$$EMO = \frac{1,350,000}{4~veces}=\$337,500$$
 
 **Costo de oportunidad de mantener saldo en caja:**
 
 $$CO = EMO * i$$
-$$CO = 357,142.86 * 0.085=\$30,357.14$$
+$$CO = 337,500*0.085=\$28,012.5$$
 
-La empresa pierde $\$30,357.14$ dólares por tener un EMO de $\$357,142.86$ en caja.
+
+La empresa pierde $\$28,012.5$ dólares por tener un EMO de $\$337,500$ en caja.
 
 > b) El administrador financiero propone a través de nuevas estrategias se puede lograr incrementar el periodo promedio de pago a 40 días. Determine el ciclo de efectivo, la reotación de efectivo, el efectivo mínimo de operación y el costo de oportunidad por mantener el saldo en caja.
 
