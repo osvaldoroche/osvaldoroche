@@ -1,5 +1,5 @@
 ---
-title: Soluciones de principios de gerencia financiera
+title: Soluciones del Libro Principios de Gerencia Financiera
 author: Osvaldo Roche
 date: '2022-08-30'
 slug: soluciones-de-principios-de-gerencia-financiera
@@ -25,7 +25,7 @@ projects: []
 
 ## 1. ¿Que es la gerencia financiera?
 
-Es la encargada de administración eficiente del capital de trabajo, teniendo en cuenta los criterios de riesgo y rentabilidad. orienta la estrategia financiera para garantizar fuentes de financiamiento.
+Es la encargada de administración eficiente del capital de trabajo, teniendo en cuenta los criterios de riesgo y rentabilidad. Orienta la estrategia financiera para garantizar fuentes de financiamiento y tiene las siguientes funciones:
 
 + Encargada de conseguir dinero
 + Mantener relaciones con inversionistas
@@ -34,7 +34,7 @@ Es la encargada de administración eficiente del capital de trabajo, teniendo en
 ## 2. Nombre 3 herramientas básicas en la que se basa la gerencia financiera
 
 + Toma de decisiones
-+ Pronostico y presupuesto
++ Pronóstico y presupuesto
 + Evaluación de proyectos y evaluación de activos
 
 ## 3. ¿Cuáles son las funciones de un gerente financiero?
@@ -68,7 +68,9 @@ h) Evaluar financiamiento a corto y largo plazo referidas a riesgo y rendimiento
 ## 5. Cite 3 áreas con las que se relaciona la gerencia financiera
 
 1- Contabilidad
+
 2- Presupuesto
+
 3- Producción
 
 
@@ -79,37 +81,36 @@ Porque la gerencia financiera se encarga de la conducción de las finanzas de la
 ## 7. ¿Cómo se clasifican las empresas?
 
 + Por actividad
+
 + Por tamaño
-+ por propiedad
+
++ Por propiedad
+
 + Por número de propietarios
 
 ## 8. Las empresas según actividad se clasifican en
 
-- Por actividad
   + Agropecuarias
   + Mineras
   + Industriales
   + Comerciales
   + Servicios
   
-## 9. Las empresas según actividad se clasifican en
+## 9. Las empresas según su tamaño se clasifican en
 
-- Por tamaño
   + microempresa
   + Pequeña empresa
   + Mediana empresa
   + Gran empresa
   
-## 10. Las empresas según origen de los recursos se clasifican en
+## 10. Las empresas según origen de los recursos o propiedad se clasifican en
 
-- Por propiedad
   + Privada
   + Pública
   + Mixta
   
 ## 11. ¿Cómo se clasifican según el número de propietarios?
   
-- Por número de propiedarios
   + individuales
   + Unipersonales
   + Sociedades
@@ -127,7 +128,7 @@ Forma de organizarse en donde 2 o más personas por medio de un convenio acuerda
   + Responsabilidad limitada
   
 - sociedades de capital
-  + Anonima
+  + Anónima
   + Comandita por acción
   
 ## 14. Las funciones de la empresa son 6 cítelas
@@ -158,7 +159,7 @@ Forma de organizarse en donde 2 o más personas por medio de un convenio acuerda
 
 ## 18. Desde el punto de vista de su compocisión ¿cómo se analiza el balance general?
 
-Desde la naturaleza del negocio, del tipo de producto y de las estrategias de administración de activos. debe tomar en decisiones acerca del efectivo versus valores negociables, ventas versus crédito versus ventas al contado, producir o comprar insumos, en qué porcentaje participará en la inversión planificada y así sucesivamente. 
+Desde la naturaleza del negocio, del tipo de producto y de las estrategias de administración de activos. Debe tomar en decisiones acerca del efectivo versus valores negociables, ventas versus crédito versus ventas al contado, producir o comprar insumos, en qué porcentaje participará en la inversión planificada y así sucesivamente. 
 
 ## 19. Cite las tres preguntas del mundo de las finanzas
 
@@ -171,7 +172,7 @@ Desde la naturaleza del negocio, del tipo de producto y de las estrategias de ad
 
 ## 20. ¿Qué es el análisis financiero y como se divide?
 
-Consiste en la evaluación de las perspectivas económicas y de los riesgos que enfrenta la empresa en el corto y largo plazo.se divide en dos:
+Consiste en la evaluación de las perspectivas económicas y de los riesgos que enfrenta la empresa en el corto y largo plazo. Se divide en dos:
 
 + Análisis de corto plazo: Administración de activos y pasivos corrientes.
 
@@ -225,7 +226,7 @@ $$PCP=\frac{360}{RCP}$$
 
 **Paso 2: Calcular ciclo conversión de efectivo o ciclo de efectivo**
 
-$$CCE = PCI + PCC + PCP$$
+$$CCE = PCI + PCC - PCP$$
 
 **Paso 3: Calcular rotación de efectivo**
 
@@ -302,6 +303,8 @@ Es una herramienta comercial que permite estimar las ventas a futuro, con el fin
 ## 19. ¿En qué consiste el método de efectivo de miller Orr?
 
 ## 20. ¿En que consiste la desinversión?
+
+La desinversión sucede cuando una empresa necesita recursos en el corto plazo y vende sus activos fijos.
 
 <br>
 
@@ -381,6 +384,180 @@ $\begin{aligned}
 AR(p): Y_i &= c + \epsilon_i + \phi_i Y_{i-1} \dots \\
 Y_{i} &= c + \phi_i Y_{i-1} \dots
 \end{aligned}$
+
+<br>
+
+# Capítulo 3
+
+## 1. ¿Qué son las cuentas por cobrar?
+
+Representan derechos exigibles originados por ventas, sevicios prestados, otorgamiento de préstamos o cualquier otro importe sobre el cual la empresa tienen dichos derechos.
+
+## 2. ¿Cuántos tipos de créditos existen?
+
+Existen dos tipos de créditos:
+
++ Comercial: Cuando la empresa compra bienes o servicios a otros sin pagarlos inmmediatamente.
+
++ Consumidor: Tmabién llamado crédito de venta al por menor o detalle.
+
+## 3. En qué inciden la competencia en las cuentas por cobrar
+
+Incide en la utilización del crédito a clientes, pues es una estrategia que utilizan para ganar clientes y superar a la competencia.
+
+## 4. ¿Qué se incluye en las cuentas por cobrar?
+
+Se incluyen documentos por cobrar de clientes que representan derechos exigibles, que han sido documentados con letras de cambio o pagarés.
+
+## 5. ¿Por qué se dice que las cuentas por cobrar son importantes en el capital de trabajo?
+
+Porque las empresan realizan una inversión cuando las utilizan y es un elemento del activo circulante, es decir, el capital de trabajo depende muchas veces de la cuentas por cobrar.
+ 
+## 6. Cómo se relaciona las cuentas por cobrar con el ciclo financiero?
+
+## 7. ¿De qué depende el surgimiento de las cuentas por cobrar?
+
+Van a surgir dependiendo de la estrategia de la empresa u orientación que la gerencia de comercialización establezca.
+
+## 8. ¿Cuál es uno de los objetivos de las cuentas por cobrar
+
+Estimular las ventas y ganar clientes, debido a que son el medio para vender productos y superar a la competencia mediante le ofrecimiento de facilidades de pago como parte de los sevicios de la empresa para ofrecer a sus clientes y formar la cartera más óptima.
+
+## 9. ¿Cómo se calcula la dependencia del capital de trabajo de las cuentas por cobrar?
+
+Mediante la siguiente relación de Cuentas por cobrar a capital Trabajo ($CPC_{kt}$):
+
+$$CPC_{kt}=\frac{Cuentas~Por~Cobrar}{Capital~de~Trabajo}$$
+
+## 10. ¿Cómo se calcula la participación de las cuentas por cobar en las cuentas del activo circulante?
+
+Mediante la relación de cuentas por cobrar a activo circulante ($CPC_{AC}$):
+
+$$CPC_{AC}=\frac{Cuentas~Por~Cobrar}{Activo~Circulante}$$
+
+## 11. ¿Cómo se calculan las cuentas por cobrar?
+
+Las cuentas por cobrar a ventas ($CPC_{V}$) se calcula:
+
+$$CPC_{V}=\frac{Cuentas~por~Cobrar}{Ventas}$$
+## 12. ¿Cómo se calcula el periodo de cartera?
+
+El periodo de cartera (PC) se calcula como:
+
+$$PC=CPC_{V}*360$$
+
+## 13. ¿Qué es la rotación de cartera?
+
+La rotación de cartera es un indicador financiero que determina el tiempo que la empresa toma en cobrar la cartera a sus clientes.
+
+## 14. ¿Qué es una política de crédito?
+
+Las políticas de crédito tienen como objetivo elevadar al máximo el rendimiento sobre la inversión.
+
+
+<br>
+<br>
+
+# Cuestionario
+
+## 1. ¿Qué son las finanzas?
+
+Área de las ciencias económicas que tratan sobre la administración, ejecución y planeación de los recursos financieros de una entidad económica cuyo objetivo es obtener rentabilidad, retorno y benefico teniendo en cuenta el rendimiento o el riesgo.
+
+## 2. ¿Qué es lo que tiene en cuenta las finanzas?
+
+- Administración de los recursos
+- Ejecución de los recursos
+- Planeación de los recursos
+
+## 3. ¿Qué son las finanzas públicas?
+
+Relaciona la situación financiera de la hacienda pública, especificamente con el presupuesto gubernamental, la tesoreria y la contabilidad, esta tiene asegurado que son los impuestos y parten de la aplicación de un marco nomativo y las decisiones parten de un plan anual de gasto que relaciona con decisiones de corto y largo plazo y si los ingresos son menores se utiliza apalancamiento por deuda pública.
+
+## 4. ¿Qué son las finanzas privadas?
+
+Son las relacionadas con las decisiones de corto y largo plazo respecto a la iversión en aquellos instrumentos financieros que le reportan rentabilidad, retorno y disminución del riesgo para ellos utilizan instituciones financieras, los mercados de dinero o capital dependiendo de las transacciones y el tipo de efectivo.
+
+## 5. ¿Cuáles son las áreas financiera?
+
+- Adminsitración financiera
+- Mercados financieros
+- Inversiones de corto plazo y largo plazo
+
+## 6. ¿Qué es la adminsitración financiera?
+
+Área de las finanzas que aplica principios, técnicas y herramientas financieras para crear y mantener el valor de una entidad económica mediante la toma de decisiones en el uso de los recursos.
+
+## 7. ¿Cúales son los objetivos de la adminsitración financiera?
+
+- Maximización del valor de la empresa a través de la generación de flujos de efectivo
+
+- Obtener fondos y recursos financieros
+
+- Asiganar recursos
+
+- Planear crecimiento de la empresa
+
+- Minimizar incertidumbre de la inversión y con ello el riesgo
+
+## 8. ¿Por qué es importante la administarción financiera?
+
+- Porque sirve para la inversión
+- Porque sirve para el financiamiento
+- Porque sirve para la administración de efectivo
+
+## 9. Relaciones de la administración financiera con otras áreas
+
+- Contabilidad
+- Presupuesto
+- producción
+
+## 10. ¿Cuál es la composición financiera de corto y largo plazo de la empresa?
+
+Son las fuentes de la financiación o pasivo formadas por los recursos ajenos, representada por deudas de corto plazo y largo plazo y los recursos propios o patrimonio neto.
+
+## 11. ¿Qué es el capital de trabajo?
+
+Representa el ciclo financiero a corto plazo de la empresa, se define como el tiempo promedio que transcurre entre la adquisición de materias primas y servicios, su transformación y finalmente su venta.
+
+## 12. ¿Qué implica la administración de capital de trabajo desde el punto de vista del gerente financiero?
+
+Implica tomar decisiones sobre el tipo de fuente de financiamiento que se utilizará en el corto plazo. Él debe identificar las fuentes de financiamiento que tiene acceso.
+
+## 13. Qué es el ciclo de efectivo?
+
+Es el plazo que transcurre desde que se realiza la compra de la materia prima para manufacturarla y convertirla en un producto final hasta la cobranza de la venta. Son los días en que retorna el efectivo.
+
+## 14. ¿Qué es un presupuesto de caja?
+
+Ayuda a estimar los saldos de efectivo disponibles a partir de pronósticos de futuras salidas y entradas de efectivo de una empresa permite saber la futura dispocisión de efectivo.
+
+## 15. Objetivos del presupuesto de caja
+
+- Determinar saldo de caja al final de un periodo
+
+- Identificar los excedentes o déficit de efectivo y corregirlo
+
+- Establecer las necesidades de efectivo y financiamiento
+
+- Establecer una base para la toma de decisiones
+
+## 16. ¿Qué es un pronóstico de venta?
+
+Herramienta comercial que permite estimar las ventas a futuro con el fin de establecer metas en un periodo.
+
+## 17. ¿Cuáles son o los factores a tomar en cuenta en un pornóstico?
+
+- La capacidad del negocio
+- Estacionalidad de las ventas
+- Expectativas de las ventas
+- Estimación de la demanda y oferta
+- Entorno económico
+
+
+
+
+
 
 
 
