@@ -240,21 +240,62 @@ Es el efectivo mínimo que la empresa necesita para operar en el corto plazo y s
 $DOP$=Desembolsos Operacionales Planificados
 $$EMO = \frac{DOP}{RE}$$
 
-## 6. ¿Por qué decimos que el crédito es una fuente de financiamiento de corto plazo?
+## 6. ¿Cuál es otra forma alternativa de calcular el ciclo de efectivo de la empresa?
+
+La forma es ver la compocición del ciclo de efectivo (CCE), que esta determinada por el ciclo operativo de la empresa (COE) menos el periodo promedio de pago (PPP). La forma es la siguiente:
+
+$$CCE=COE-PPP$$
+$$COE=PPC+EPI$$
+$$EPI=PCMP+PCP+PV$$
+
+Donde:
+
+$PPC:$ Periodo promedio de cobro
+$EPI:$ Edad promedio de inventarios
+$PCMP:$ Periodo de consumo de materias primas
+$PCP:$ Periodo de consumo de la producción
+$PV:$ Periodo de ventas
+
+El calculo de cada indicador se realiza de la forma siguinte:
+
+$$PPC=\frac {360}{\frac{VN}{\frac{SICC+SFCC}{2}}}$$
+$$PCMP=\frac {360}{\frac{MPC}{\frac{IIMP+IFMP}{2}}}$$
+$$PCP=\frac {360}{\frac{CP}{\frac{IIPP+IFPP}{2}}}$$
+$$PV=\frac {360}{\frac{CV}{\frac{IIPT+IFPT}{2}}}$$
+$$PPP=\frac {360}{\frac{Compras}{\frac{SIP+SFP}{2}}}$$
+
+Donde:
+
+$VN:$ Ventas netas
+$SICC:$ Saldo inicial de cuentas por cobrar
+$SFCC:$ Saldo final de cuentas por cobrar
+$MPC:$ Materias primas consumidas
+$IIMP:$ Inventario inicial de materias primas
+$IFMP:$ Inventario final de materias primas
+$CP:$ Costo de producción
+$IIPP:$ Inventario inicial de productos en proceso
+$IFPP:$ Inventario final de productos en proceso
+$CV:$ Costo de venta
+$IIPT:$ Inventario inicial de productos terminados
+$IFPT:$ Inventario final de productos terminados
+$SIP:$ Saldo inicial de proveedores
+$SFP:$ Saldo final de proveedores
+
+## 7. ¿Por qué decimos que el crédito es una fuente de financiamiento de corto plazo?
 
 Porque se obtiene de los proveedores de corto plazo. Puede ser con garantía o sin garantía.
 
-## 7. ¿Cuáles son los motivos que tiene la empresa para mantener liquidez?
+## 8. ¿Cuáles son los motivos que tiene la empresa para mantener liquidez?
 
 + Motivo Transacción
 + Motivo Precaución
 + Motivo Especulación
 
-## 8. ¿Qué es el presupuesto de caja?
+## 9. ¿Qué es el presupuesto de caja?
 
 Es una herramienta financiera, su fin es estimar los saldos disponibles a partir de los pronósticos de las futuras salidas o entradas de efectivo de la empresa.
 
-## 9. Cite 4 objetivos del presupuesto de caja
+## 10. Cite 4 objetivos del presupuesto de caja
 
 + Determinar saldo de caja al final de un periodo.
 
@@ -264,11 +305,11 @@ Es una herramienta financiera, su fin es estimar los saldos disponibles a partir
 
 + Establecer bases para tomar decisiones.
 
-## 10. ¿Qué es un pronóstico de ventas?
+## 11. ¿Qué es un pronóstico de ventas?
 
 Es una herramienta comercial que permite estimar las ventas a futuro, con el fin de establecer metas en un determinado periodo.
 
-## 11. ¿Qué factores se deben tomar en cuenta cuando se realiza un pronóstico de ventas?
+## 12. ¿Qué factores se deben tomar en cuenta cuando se realiza un pronóstico de ventas?
 
 + Capacidad del negocio
 
@@ -280,7 +321,7 @@ Es una herramienta comercial que permite estimar las ventas a futuro, con el fin
 
 + El entorno económico
 
-## 12. Cite algunas técnicas de pronóstico de ventas
+## 13. Cite algunas técnicas de pronóstico de ventas
 
 1- Método de incremento procentual
 2- Método de incremento absoluto
@@ -288,21 +329,21 @@ Es una herramienta comercial que permite estimar las ventas a futuro, con el fin
 4- Método de mínimos cuadrados
 5- Método geométrico
 
-## 13. ¿En qué consiste el método de incremento absoluto?
+## 14. ¿En qué consiste el método de incremento absoluto?
 
-## 14. ¿En qué consiste el método de incremento porcentual?
+## 15. ¿En qué consiste el método de incremento porcentual?
 
-## 15. ¿Qué es el método de los promedios moviles?
+## 16. ¿Qué es el método de los promedios moviles?
 
-## 16. ¿Qué es el método de los mínimos cuadrados?
+## 17. ¿Qué es el método de los mínimos cuadrados?
 
-## 17. ¿Cuáles son los métodos de tratamiento del efectivo?
+## 18. ¿Cuáles son los métodos de tratamiento del efectivo?
 
-## 18. ¿En qué consiste el método de efectivo de Baumol?
+## 19. ¿En qué consiste el método de efectivo de Baumol?
 
-## 19. ¿En qué consiste el método de efectivo de miller Orr?
+## 20. ¿En qué consiste el método de efectivo de miller Orr?
 
-## 20. ¿En que consiste la desinversión?
+## 21. ¿En que consiste la desinversión?
 
 La desinversión sucede cuando una empresa necesita recursos en el corto plazo y vende sus activos fijos.
 
@@ -440,6 +481,7 @@ $$CPC_{AC}=\frac{Cuentas~Por~Cobrar}{Activo~Circulante}$$
 Las cuentas por cobrar a ventas ($CPC_{V}$) se calcula:
 
 $$CPC_{V}=\frac{Cuentas~por~Cobrar}{Ventas}$$
+
 ## 12. ¿Cómo se calcula el periodo de cartera?
 
 El periodo de cartera (PC) se calcula como:
