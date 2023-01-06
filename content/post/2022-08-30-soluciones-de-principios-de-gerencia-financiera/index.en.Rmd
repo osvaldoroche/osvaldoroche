@@ -251,9 +251,13 @@ $$EPI=PCMP+PCP+PV$$
 Donde:
 
 $PPC:$ Periodo promedio de cobro
-$EPI:$ Edad promedio de inventarios
+
+$EPI:$ Edad promedio de 
+
 $PCMP:$ Periodo de consumo de materias primas
+
 $PCP:$ Periodo de consumo de la producción
+
 $PV:$ Periodo de ventas
 
 El calculo de cada indicador se realiza de la forma siguinte:
@@ -267,18 +271,31 @@ $$PPP=\frac {360}{\frac{Compras}{\frac{SIP+SFP}{2}}}$$
 Donde:
 
 $VN:$ Ventas netas
+
 $SICC:$ Saldo inicial de cuentas por cobrar
+
 $SFCC:$ Saldo final de cuentas por cobrar
+
 $MPC:$ Materias primas consumidas
+
 $IIMP:$ Inventario inicial de materias primas
+
 $IFMP:$ Inventario final de materias primas
+
 $CP:$ Costo de producción
+
 $IIPP:$ Inventario inicial de productos en proceso
+
 $IFPP:$ Inventario final de productos en proceso
+
 $CV:$ Costo de venta
+
 $IIPT:$ Inventario inicial de productos terminados
+
 $IFPT:$ Inventario final de productos terminados
+
 $SIP:$ Saldo inicial de proveedores
+
 $SFP:$ Saldo final de proveedores
 
 ## 7. ¿Por qué decimos que el crédito es una fuente de financiamiento de corto plazo?
@@ -329,21 +346,7 @@ Es una herramienta comercial que permite estimar las ventas a futuro, con el fin
 4- Método de mínimos cuadrados
 5- Método geométrico
 
-## 14. ¿En qué consiste el método de incremento absoluto?
-
-## 15. ¿En qué consiste el método de incremento porcentual?
-
-## 16. ¿Qué es el método de los promedios moviles?
-
-## 17. ¿Qué es el método de los mínimos cuadrados?
-
-## 18. ¿Cuáles son los métodos de tratamiento del efectivo?
-
-## 19. ¿En qué consiste el método de efectivo de Baumol?
-
-## 20. ¿En qué consiste el método de efectivo de miller Orr?
-
-## 21. ¿En que consiste la desinversión?
+## 14. ¿En que consiste la desinversión?
 
 La desinversión sucede cuando una empresa necesita recursos en el corto plazo y vende sus activos fijos.
 
@@ -588,7 +591,7 @@ Ayuda a estimar los saldos de efectivo disponibles a partir de pronósticos de f
 
 Herramienta comercial que permite estimar las ventas a futuro con el fin de establecer metas en un periodo.
 
-## 17. ¿Cuáles son o los factores a tomar en cuenta en un pornóstico?
+## 17. ¿Cuáles son o los factores a tomar en cuenta en un pronóstico?
 
 - La capacidad del negocio
 - Estacionalidad de las ventas
@@ -596,14 +599,100 @@ Herramienta comercial que permite estimar las ventas a futuro con el fin de esta
 - Estimación de la demanda y oferta
 - Entorno económico
 
+<br>
+<br>
+
+# Capítulo 7
+
+## 1. ¿Qué es el interés simple?
+
+Es el monto o renta que se paga al capital en un periodo determinado a una tasa de interés que no se capitaliza. Es la ganancia a recibir por la inversión o porlo prestado.
+
+## 2. Cuáles son las tres variables del interés simple?
+
+Las variables son:
+
++ El capital inicial o principal ($p$)
+
++ La tasa de interés que se paga al capital ($i$)
+
++ El tiempo o periodos pactados ($n$)
+
+## 3. ¿Por qué no se acumula el interés simple al capital?
+
+No se acumula porque es no capitalizable, el interés se calcula sobre la base de un capital principal al que le genera dinero extra pero solo para el final del periodo pactado. es decir, la renta se paga solo una vez y no se acumula con el capital inical para el próximo periodo. 
+
+## 4. ¿Qué es el monto de un capital a interés simple?
 
 
+# EJERCICIOS PRÁCTICOS (Libro PGF. Balmore)
+
+**EJERCICIOS DE INTERÉS SIMPLE**
+
+## Ejercicio 1
+
+$p=800$
+
+$i=0.05$
+
+$n=2$
+
+$$I_s=Pin$$
+$$I_S=800*0.05*2=80$$
+
+**EJERCICIOS DE INTERÉS COMPUESTO**
+
+**Funciones para interés compuesto con capitalización anual:**
+
+```{r}
+# Calcula el monto o valor futuro a interés compuesto
+Int_compuesto <- function(p, n, i){
+  p*((1+i)^n)
+}
+
+# Calcula el periodo de capitalización de un valor futuro
+Int_compuesto_n <- function(s, p, i){
+  log(s/p) / log(1+i)
+}
+
+# Calcula la tasa de interés de un valor futuro
+Int_compuesto_i <- function(s, p, n){
+  ((s/p) ^ (1/n)) - 1
+}
+
+# Calcula el valor actual a interés compuesto
+Int_compuesto_va <- function(s, n, i){
+  s / ((1 + i) ^ n)
+}
+```
 
 
+```{r}
+Int_compuesto_va(14000,20,0.0225)
+```
 
 
+**Funciones de interés compuesto con capitalización menor a un año:**
+
+```{r}
+# Calcula el monto a interés compuesto con capitalización menor a un año
+Int_compuesto_efectiva <- function(p, j, n, m){
+  i <- j/m
+  capitalizacion <- m * n
+  Monto <- p * (1+i) ^ capitalizacion
+  Monto
+}
+
+# Calcula el periodo de capitalización de un valor futuro cuanto existe tasa de interés nominal
+Int_compuesto_efectiva_n <- function(s, p, j, m){
+  i <- j/m
+  log(s/p) / log(1+i)
+}
 
 
+# Literal 
+Int_compuesto_efectiva(3000,0.06,8,4)
+```
 
 
 
