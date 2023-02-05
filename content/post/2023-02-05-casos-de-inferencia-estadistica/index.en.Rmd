@@ -1,0 +1,122 @@
+---
+title: Casos de Inferencia Estadística
+author: Osvaldo Roche
+date: '2023-02-05'
+slug: casos-de-inferencia-estadistica
+categories:
+  - Estadística
+tags:
+  - Estadistica
+  - R
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2023-02-05T08:32:43-06:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+# Caso 1: Marketing de Holiday Toys
+
+Esta empresa distribuye sus productos a través de más de 1000 puntos de venta. Al planear sus niveles de producción para la temporada de invierno siguiente, debe decidir cuántas unidades de cada producto fabricar antes de saber _cuál será la verdadera demanda en cada tienda_. El gerente de Marketing de Holiday espera que su juguete de novedad más importante de este año tenga una demanda de 40 unidades en promedio por punto de venta. Antes de tomar la decisión final de producción con base en dicha estimación, la empresa decide levantar una encuesta en una muestra de 25 puntos de venta con objeto de obtener más información acerca de la demanda del nuevo producto. A cada uno de estos puntos de venta se le proporciona información sobre las características del nuevo juguete e información sobre el costo y el precio de venta sugerido. Después se le pide que anticipe la cantidad que solicitará. Se busca estimar las cantidades ordenadas por puntos de ventas.
+
+## Paso 1: Levantar una encuesta en 25 puntos de venta.
+
+
+Ya fue realizado por la empresa y se estimo 40 unidades promedio por punto de venta.
+
+<br>
+
+## Paso 2: Formulación de las hipótesis
+
+$\mu$ = Cantidades ordenadas por puntos de venta.
+
+Ya que se desea estimar un parámetro dado (las 40 unidades estimadas por el gerente de marketing) se supone a favor la hipótesis nula, de manera que su formulación es:
+
+$$H_{0}:\mu=40$$
+$$H_{a}:\mu \neq 40$$
+
+Donde:
+
+$H_{0}$: Las cantidades medias ordenadas por punto de venta serán de 40.
+
+$H_{a}$: Las cantidades medias ordenadas por punto de venta no serán de 40.
+
+<br>
+
+## Paso 3: Calcular los estadísticos de la muestra
+
+En la muestra de los 25 puntos de venta se obtuvieron:
+
+$\bar{x}=37.4$
+
+$s=11.79$
+
+<br>
+
+## Paso 4: Calcular el estadístico de prueba
+
+Debido a que es una muestra pequeña se utiliza el valor 't', cuyo estadístico de prueba es el siguiente:
+
+$$z=\frac{\bar{x}-\mu_{0}}{\sigma_{x}}=\frac{37.4-40}{11.79/\sqrt{25}}=\frac{-2.6}{2.358}=-1.10$$
+
+En la tabla de distribución "t" el valor que se encuentra a 24 grados de libertad está entre 0.84 y 1.13. En el área de la cola superior t = 1.10 se encuentra entre 0.20 y 0.10, duplicando los valores el valor-p se encuentra entre 0.40 y 0.20. Debido a que el nivel de significancia es de $\alpha=0.05$, el valor-p es mayor y por tanto la hipótesis nula no puede ser rechazada.
+
+> **Con un nivel de significancia del 5% no hay evidencia suficiente para rechazar la hipótesis nula. No hay evidencia para que Holiday modifique su plan de producción para la temporada siguiente.**
+
+<br>
+
+## Paso 5: Prueba del p-value con R
+
+Con R se puede calcular el valor-p de la prueba de forma rápida y se llega a la misma conclusión:
+
+```{r}
+2 * pt(q=1.10, df=24, lower.tail=FALSE)
+```
+
+> **Debido a que el valor-p es 0.2822 > 0.05 la hipótesis nula no es rechazada. Holiday puede continuar con su plan de producción.**
+
+<br>
+
+## Paso 6: Prueba del valor crítico en R
+
+También se puede probar la hipótesis con la prueba del valor crítico y se llega a la misma conclusión:
+
+```{r}
+qt(p = 0.95 + 0.05/2, df = 24, lower.tail = TRUE)
+```
+
+> **Debido a que t = -1.10 se encuentra entre -2.0639 y 2.0639 la hipótesis nula no se rechaza y el resultado indica que Holyday puede continuar con su plan de producción para la temporada próxima con base en la expectativa de μ = 40.**
+
+<br>
+<br>
+
+# Caso 2: Declaraciones de impuestos
+
+Las declaraciones de impuestos presentadas antes del 31 de marzo obtienen un reembolso que en promedio es de $1 056. Considere la población de los contribuyentes de “última hora” que presentan su declaración en los últimos cinco días del periodo para este trámite (normalmente del 10 al 15 de abril).
+
+a) Un investigador sugiere que la razón por la que estos declarantes esperan hasta los últimos días se debe a que en promedio obtienen un reembolso menor que los que declaran antes del 31 de marzo. Establezca las hipótesis apropiadas de manera que el rechazo de H0 favorezca la sugerencia de este investigador.
+
+b) En una muestra de 400 personas que presentaron su declaración entre el 10 y el 15 de abril, la media muestral de los reembolsos fue $910$. Por experiencia se sabe que es posible considerar que la desviación estándar poblacional es σ = $1 600. ¿Cuál es el valor-p?
+
+c) Con σ = 0.05, ¿cuál es su conclusión?
+
+d) Repita la prueba de hipótesis anterior usando el método del valor crítico.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
