@@ -46,7 +46,7 @@ title: Osvaldo Roche
 
 Soy Estudiante de Economía y autodidacta en la ciencia de Datos este espacio es para exporner y explicar temas que aprendo a lo largo de mi vida académica. 
 
-{{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "uploads/resum.pdf" "newtab" >}}Currículum{{< /staticref >}}.
+{{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "uploads/resume.pdf" "newtab" >}}Currículum{{< /staticref >}}.
 
 **Mis Intereses**
 
