@@ -44,7 +44,7 @@ superuser: true
 title: Osvaldo Roche
 ---
 
-Soy Estudiante de Economía y autodidacta en la ciencia de Datos este espacio es para exporner y explicar temas que aprendo a lo largo de mi vida académica. 
+Soy Estudiante de Economía por la Universidad de El Salvador (UES) y autodidacta de la ciencia de Datos aplicada a las finanzas. 
 
 {{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "uploads/resume.pdf" "newtab" >}}Currículum{{< /staticref >}}.
 
