@@ -50,7 +50,7 @@ Soy Estudiante de Economía por la Universidad de El Salvador (UES) y autodidact
 
 **Mis Intereses**
 
-- Economía y Negocios
-- Investigación
+- Finanzas y Economía
+- Negocios
 - Análisis de datos
 - Inteligencia Artificial
