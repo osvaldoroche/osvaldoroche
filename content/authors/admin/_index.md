@@ -24,7 +24,7 @@ role: Estudiante de Economía
 social:
 - icon: envelope
   icon_pack: fas
-  link: /#contact
+  link: osvaldoroche@gmail.com
 - display:
     header: true
   icon: twitter
