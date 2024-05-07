@@ -1,0 +1,89 @@
+---
+title: Administración de la Cadena de Suministro 5th (Sunil Chopra)
+author: Osvaldo Roche
+date: '2024-05-06'
+slug: administracion-cadena-de-suministro-sunil-chopra
+categories:
+  - Resumen
+tags:
+  - Books
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2024-05-06T19:03:53-06:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+
+
+<div id="capitulo-1.-qué-es-la-cadena-de-suministro" class="section level1">
+<h1>CAPITULO 1. Qué Es la Cadena de Suministro</h1>
+<p>Una cadena de suministro se compone de todas las partes involucradas, directa o indirectamente, para satisfacer la petición de un cliente. La cadena de suministro incluye todas las funciones implicadas en la recepción y satisfacción del pedido de un cliente.Asi que el propósito primordial de cualquier cadena de suministro es satisfacer las necesidades del cliente y, en el proceso generar una ganancia para si misma.</p>
+<div id="objetivo-de-una-cadena-de-suministro" class="section level2">
+<h2>Objetivo de una cadena de suministro</h2>
+<p>El objetivo de toda cadena de suministro debe ser maximizar el valor total generado. <strong>El valor</strong> (también conocido como superávit de la cadena de suministro) que genera una cadena de suministro <strong>es la diferencia entre lo que el cliente paga por el producto final y los costos en que incurre la cadena para cumplir con el pedido</strong>. De otro modo:</p>
+<p><span class="math inline">\(Valor = Supéravit~cadena~suministro=Pago~Final~-~Costos\)</span></p>
+<p>La diferencia entre el valor del producto y su precio permanece con el cliente como súperavit para el cliente (SC). Es decir:</p>
+<p><span class="math inline">\(SC = Valor~Producto~-Precio~Producto\)</span></p>
+<p>La diferencia entre el superávit del cliente y el superávit de la cadena de suministro se transforma en <strong>rentabilidad de la cadena de suministro</strong>(RCS).</p>
+<p><span class="math inline">\(RCS = Valor - SC\)</span></p>
+<p><strong>Ejemplo: un cliente que compra un ruteador inalámbrico en Best Buy paga <code>$60.00</code>, que representan el ingreso que la cadena de suministro recibe. Los clientes que compran el ruteador lo valoran en más o menos <code>$60</code>. Best Buy y otras etapas de la cadena de suministro incurren en costos de <code>$55</code> para transferir información, producir componentes, almacenarlos, transportarlos, transferir fondos.</strong></p>
+<pre class="r"><code># Datos obtenidos
+precio = 60
+valorProducto = 60
+costos = 55
+
+# Calculo del RCS
+RCS = precio - costos
+
+# Resultado
+RCS</code></pre>
+<pre><code>## [1] 5</code></pre>
+<p>En este ejemplo la RCS es de <code>$5.00</code></p>
+<p>De manera que una eficaz administración de la cadena de suministro implica la administración de sus activos y flujos de productos, información y fondos para máximizar su superávit. El argumento del superávit de la cadena de suministro implica que conforme la venta al detalle comience a consolidarse, el papel de los distribuidores disminuirá.</p>
+</div>
+<div id="fases-de-decisión-en-una-cadena-de-suministro" class="section level2">
+<h2>Fases de decisión en una cadena de suministro</h2>
+<p>Cada desición debe tomarse para incrmentar el superavit de la cadena de suministro. Las fases de decisión en una cadena de suministro pueden clasificarse como de diseño, de planeación y de operaciones, según el marco de tiempo durante el cual se apliquen las decisiones tomadas.</p>
+<p><strong>1.Estrategia o diseño de la cadena de suministro.</strong> Durante esta fase, una compañía decide cómo estructurar la cadena de suministro para los siguientes años.Aquí se establece cómo se asignarán los recursos y qué procesos realizará cada etapa.</p>
+<p><strong>2. Planeación de la cadena de suministro.</strong> Para decisiones tomadas durante esta fase, el marco de tiempo considerado es de un trimestre a un año. La meta de la planeación es maximizar el superávit de la cadena de suministro que se puede generar a lo largo del horizonte de planeación dadas las restricciones establecidas durante la fase estratégica o de diseño.La planeación incluye tomar decisiones en relación a qué mercados serán abastecidos desde qué lugares, la subcontratación de la fabricación, las políticas de inventario que se seguirán, y la temporización y tamaño de las promociones de comercialización y precios.</p>
+<p><strong>3. Operación de la cadena de suministro.</strong> Durante esta fase, las compañías toman decisiones respecto de pedidos de clientes individuales. En esta fase las empresas asignan inventario o producción a pedidos individuales, fijan la fecha en que el pedido se debe terminar, generan listas de selección en un almacén, asignan un pedido a un modo de embarque particular, establecen programas de entrega de los camiones y colocan pedidos de reabastecimiento.</p>
+</div>
+<div id="visualización-de-los-procesos-de-una-cadena-de-suministros" class="section level2">
+<h2>Visualización de los Procesos de una Cadena de Suministros</h2>
+<p>Hay dos maneras de ver los procesos realizados en una Cadena de suministro:</p>
+<ol style="list-style-type: decimal">
+<li><p>Visualización de cliclo</p></li>
+<li><p>Visualización de empuje/tiron</p></li>
+</ol>
+<div id="visualización-de-cliclo" class="section level3">
+<h3>Visualización de cliclo</h3>
+<p>Este se divide en cuatro ciclos:</p>
+<ul>
+<li>Ciclo de pedido del cliente</li>
+<li>Ciclo de reabastecimiento</li>
+<li>Ciclo de fabricación</li>
+<li>Ciclo de adquisición</li>
+</ul>
+<p>Cada uno de estos ciclos consta de 6 subprocesos:</p>
+<ul>
+<li>El proveedor comercializa el producto</li>
+<li>El comprador coloca un pedido</li>
+<li>El proveedor recibe el pedido</li>
+<li>El proveedor surte el pedido</li>
+<li>El comprador recibe el suministro</li>
+<li>El comprador devuelve flujos inversos al proveedor</li>
+</ul>
+<p>El objetivo del comprador es garanjtizar la disponibilidad del producto y alcanzar economías de escala en los pedidos. El proveedor trata de pronosticar los pedidos del cliente y reducir el costo de recepción del pedido. De manera que cada uno es vendedor o comprador en algún momento del ciclo.</p>
+<p>Una visualización de ciclo de la cadena de suministro es útil cuando se consideran desiciones de operaciones porque especifica con claridad las funciones de cada mienbbro de la cadena. Por ejemplo, cuando se establicen sistemas de información para apoyar las operaciones de la cadena de suministro.</p>
+</div>
+<div id="visualización-de-empujetirón" class="section level3">
+<h3>Visualización de empuje/tirón</h3>
+</div>
+</div>
+</div>
