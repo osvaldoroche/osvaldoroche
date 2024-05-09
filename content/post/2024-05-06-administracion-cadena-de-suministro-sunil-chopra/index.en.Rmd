@@ -20,15 +20,15 @@ projects: []
 ---
 
 
-# CAPITULO 1. Qué Es la Cadena de Suministro
+# Capítulo 1. Qué Es la Cadena de Suministro
 
 Una cadena de suministro se compone de todas las partes involucradas, directa o indirectamente, para satisfacer la petición de un cliente. La cadena de suministro incluye todas las funciones implicadas en la recepción y satisfacción del pedido de un cliente.Asi que el propósito primordial de cualquier cadena de suministro es satisfacer las necesidades del cliente y, en el proceso generar una ganancia para si misma.
 
 ## Objetivo de una cadena de suministro
 
-El objetivo de toda cadena de suministro debe ser maximizar el valor total generado. **El valor** (también conocido como superávit de la cadena de suministro) que genera una cadena de suministro **es la diferencia entre lo que el cliente paga por el producto final y los costos en que incurre la cadena para cumplir con el pedido**. De otro modo:
+El objetivo de toda cadena de suministro debe ser maximizar el valor total generado. **El valor** (también conocido como superávit de la cadena de suministro o SCS) que genera una cadena de suministro **es la diferencia entre lo que el cliente paga por el producto final y los costos en que incurre la cadena para cumplir con el pedido**. De otro modo:
 
-$Valor = Supéravit~cadena~suministro=Pago~Final~-~Costos$
+$Valor = SCS =Pago~Final~-~Costos$
 
 La diferencia entre el valor del producto y su precio permanece con el cliente como súperavit para el cliente (SC). Es decir:
 
@@ -59,7 +59,7 @@ De manera que una eficaz administración de la cadena de suministro implica la a
 
 ## Fases de decisión en una cadena de suministro
 
-Cada desición debe tomarse para incrmentar el superavit de la cadena de suministro. Las fases de decisión en una cadena de suministro pueden clasificarse como de diseño, de planeación y de operaciones, según el marco de tiempo durante el cual se apliquen las decisiones tomadas.
+Cada desición debe tomarse para incrementar el superavit de la cadena de suministro. Las fases de decisión en una cadena de suministro pueden clasificarse como de diseño, de planeación y de operaciones, según el marco de tiempo durante el cual se apliquen las decisiones tomadas.
 
 **1.Estrategia o diseño de la cadena de suministro.** Durante esta fase, una compañía decide cómo estructurar la cadena de suministro para los siguientes años.Aquí se establece cómo se asignarán los recursos y qué procesos realizará cada etapa.
 
@@ -74,9 +74,9 @@ Hay dos maneras de ver los procesos realizados en una Cadena de suministro:
 
 1. Visualización de cliclo
 
-2. Visualización de empuje/tiron
+2. Visualización de empuje/tirón
 
-### Visualización de cliclo
+### Visualización de ciclo
 
 Este se divide en cuatro ciclos:
 
@@ -100,9 +100,22 @@ Una visualización de ciclo de la cadena de suministro es útil cuando se consid
 
 ### Visualización de empuje/tirón
 
+Los procesos de tirón inician la ejecución en respuesta a un pedido del cliente. Los procesos de empuje inician la ejecución con anticipación del pedido del cliente basados en pronósticos. Los procesos de tirón se conocen como *procesos reactivos* y los porcesos de empuje como *procesos especulativos*. 
+
+Una visualizaciónb de empuje/tirón de la cadena de suministro clasifica los procesos con base en si se inician en respuesta al pedido de un cliente (tirón) o con anticipación al pedido del cliente (empuje).
+
+### Procesos macro en la cadena de suministro
+
+Los procesos tanto del empuje/tirón más de visualización de ciclo se integran dentro de los procesos macros de la cadena de suministros:
+
+1. Administración de la relación con el cliente (CRM): Incluye la preparación de catálogos y otros materiales de comercialización, la administración del sitio web y la administración de atención virtual.
+
+2. Administración de la cadena de suministro interna (ISCM): Satisface la demanda generada por el proceso CRM de manera oportuna y al menor costo posible, esto incluye la planeación de la producción, capacidad de almacenamiento, planes de demanda y oferta y el surtido de pedidos.
+
+3. Administración de la relación con el proveedor (SRM): Tomar medidas para las fuentes de abastecimiento y su administración, incluyen la evaluación y selección de proveeodres, la negociación de entrega y la comunicación de productos nuevos y pedidos a proveedores.
 
 
-
+# Capítulo 2. Desempeño de la Cadena de Suministro
 
 
 
