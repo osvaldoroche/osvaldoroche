@@ -44,13 +44,18 @@ superuser: true
 title: Osvaldo Roche
 ---
 
-Soy Estudiante de Economía por la Universidad de El Salvador (UES) y autodidacta de la ciencia de Datos aplicada a las finanzas. 
+Soy egresado de Economía por la Universidad de El Salvador autodidacta de la ciencia de Datos e inteligencia artificial aplicada a la análitica de la cadena de suministro. 
 
 {{< icon name="download" pack="fas" >}} Descarga mi {{< staticref "uploads/resume.pdf" "newtab" >}}Currículum{{< /staticref >}}.
 
 **Mis Intereses**
 
-- Finanzas y Economía
-- Negocios
-- Análisis de datos
-- Inteligencia Artificial
+- Supply chain management
+- Data science 
+- Artificial Intelligence 
+- entrepreneurship
+
+
+
+
+
